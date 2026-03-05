@@ -62,8 +62,8 @@ with col_map:
         fig = px.choropleth_mapbox(
             mock_map_data, geojson=geo, locations="Borough",
             featureidkey="properties.NM", color="Score",
-            color_continuous_scale="Viridis", mapbox_style="carto-positron",
-            zoom=10, center={"lat": 51.5, "lon": -0.1}, opacity=0.6
+            color_continuous_scale="Viridis", mapbox_style="open-street-map",
+            zoom=10, center={"lat": 51.3, "lon": -0.4}, opacity=0.6
         )
         fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
         st.plotly_chart(fig, use_container_width=True)
