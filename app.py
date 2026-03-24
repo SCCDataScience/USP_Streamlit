@@ -26,7 +26,7 @@ with st.sidebar.expander("Read about Weighting"):
     st.write("**Inverse-Covariance:** This ensures we don't 'double-count' issues that are highly related (like unemployment and low income).")
 
 # 3. Main Header & Metrics
-st.title("🏙️ Understanding Surrey's Places Explorer")
+st.title("🏙️ Understanding Surrey's Places")
 st.markdown("---")
 
 # KPI Row
