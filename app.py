@@ -4,7 +4,7 @@ import plotly.express as px
 import json
 
 # 1. Page Configuration
-st.set_page_config(page_title="Wellbeing & Places 2.0", layout="wide")
+st.set_page_config(page_title="Understanding Surreys Places Test", layout="wide")
 
 # 2. Sidebar Setup
 st.sidebar.title("🛠 Custom Index")
@@ -26,7 +26,7 @@ with st.sidebar.expander("Read about Weighting"):
     st.write("**Inverse-Covariance:** This ensures we don't 'double-count' issues that are highly related (like unemployment and low income).")
 
 # 3. Main Header & Metrics
-st.title("🏙️ Strategic Places & Wellbeing Explorer")
+st.title("🏙️ Understanding Surrey's Places Explorer")
 st.markdown("---")
 
 # KPI Row
