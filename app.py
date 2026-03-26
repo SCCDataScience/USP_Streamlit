@@ -2,82 +2,103 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import json
+import numpy as np
 
 # 1. Page Configuration
-st.set_page_config(page_title="Understanding Surreys Places Test", layout="wide")
+st.set_page_config(page_title="Understand Surrey's 2.0", layout="wide")
 
-# 2. Sidebar Setup
-st.sidebar.title("🛠 Custom Index")
-st.sidebar.markdown("Define your indicators and weighting below.")
+# --- DATA LOADING & NORMALIZATION ---
+@st.cache_data
+def load_and_normalize(file_path):
+    df = pd.read_csv(file_path)
+    
+    # Normalization Logic (The Math)
+    normalized_list = []
+    for indicator in df['Indicator_Name'].unique():
+        subset = df[df['Indicator_Name'] == indicator].copy()
+        
+        v_min = subset['Value'].min()
+        v_max = subset['Value'].max()
+        direction = subset['Direction'].iloc[0]
+        
+        # Min-Max Scaling (Handling cases where min == max to avoid division by zero)
+        if v_max - v_min != 0:
+            subset['Norm_Value'] = (subset['Value'] - v_min) / (v_max - v_min)
+        else:
+            subset['Norm_Value'] = 0.5
+            
+        # Flip if Direction is Negative (e.g., higher crime = lower wellbeing)
+        if direction == 'Negative':
+            subset['Norm_Value'] = 1 - subset['Norm_Value']
+            
+        normalized_list.append(subset)
+    
+    return pd.concat(normalized_list)
 
-with st.sidebar.expander("📊 Indicators", expanded=True):
-    health = st.multiselect("Health", ["Life Expectancy", "Mental Health", "Air Quality"], default=["Life Expectancy"])
-    econ = st.multiselect("Economy", ["GVA", "Employment Rate", "Business Start-ups"], default=["Employment Rate"])
-    place = st.multiselect("Place", ["Green Space", "Crime Rate", "Connectivity"])
+# Load your new test data
+try:
+    df = load_and_normalize('USP_test.csv')
+except FileNotFoundError:
+    st.error("⚠️ 'USP_test.csv' not found. Please upload it to your GitHub repo.")
+    st.stop()
 
-weight_method = st.sidebar.radio("Weighting Logic", ["Equal", "Statistical (PCA)", "Inverse-Covariance"])
+# 2. Sidebar - User Choices
+st.sidebar.title("🎮 Tool Controls")
+mode = st.sidebar.radio("Analysis Mode", ["Single Indicator Performance", "Bespoke Index Builder"])
 
-# Methodology blurb
-st.sidebar.markdown("---")
-st.sidebar.subheader("How is it calculated?")
-with st.sidebar.expander("Read about Weighting"):
-    st.write("**Equal:** Every indicator contributes the same amount to the score. Best for simple comparisons.")
-    st.write("**Statistical (PCA):** The tool looks for patterns in the data to see which factors are the strongest 'drivers' of wellbeing in our region.")
-    st.write("**Inverse-Covariance:** This ensures we don't 'double-count' issues that are highly related (like unemployment and low income).")
+if mode == "Single Indicator Performance":
+    selected_ind = st.sidebar.selectbox("Select Indicator", df['Indicator_Name'].unique())
+    display_data = df[df['Indicator_Name'] == selected_ind]
+    chart_title = f"Trend: {selected_ind}"
+    map_color_col = "Value" # Show raw values for single indicator
+    unit_label = display_data['Unit'].iloc[0]
+else:
+    st.sidebar.markdown("Select indicators to combine into your index:")
+    selected_inds = st.sidebar.multiselect("Indicators", df['Indicator_Name'].unique(), default=df['Indicator_Name'].unique()[:3])
+    
+    # Calculate Index: Average the Normalized Values across selected indicators
+    display_data = df[df['Indicator_Name'].isin(selected_inds)].groupby(['Area_Name', 'Year', 'Area_Code']).agg({'Norm_Value': 'mean'}).reset_index()
+    chart_title = "Trend: Bespoke Index Score (0-1 Scale)"
+    map_color_col = "Norm_Value"
+    unit_label = "Index Score"
 
-# 3. Main Header & Metrics
+# 3. Main Header
 st.title("🏙️ Understanding Surrey's Places")
-st.markdown("---")
+st.markdown(f"**Mode:** {mode}")
 
-# KPI Row
-m1, m2, m3 = st.columns(3)
-m1.metric("Average Score", "72.4", "+2.1%")
-m2.metric("Economic Growth", "£34.2k GVA", "+0.5%")
-m3.metric("Equity Gap", "12.4%", "-1.2%")
+# 4. Trends Over Time (The Line Chart)
+st.subheader(chart_title)
+line_fig = px.line(display_data, x="Year", y=map_color_col, color="Area_Name", markers=True,
+                  labels={map_color_col: unit_label})
+line_fig.update_layout(xaxis_type='category') # Keeps years as discrete steps
+st.plotly_chart(line_fig, use_container_width=True)
 
-# Change to this for better compatibility with older versions:
-# col1, col2, col3 = st.columns([1, 1, 1])
-# with col1:
-    # st.metric("Average Score", "72.4", "2.1%")
-# with col2:
-    # st.metric("Economic Growth", "£34.2k", "0.5%")
-# with col3:
-    # st.metric("Equity Gap", "12.4%", "-1.2%")
+st.divider()
 
-# 4. Map and Data Section
+# 5. Map and Rankings (Latest Year Only)
+latest_year = display_data['Year'].max()
+map_data = display_data[display_data['Year'] == latest_year]
+
 col_map, col_table = st.columns([2, 1])
 
 with col_map:
-    st.subheader("Regional Heatmap")
+    st.subheader(f"Regional Snapshot ({latest_year})")
     try:
         with open('boundaries.geojson') as f:
             geo = json.load(f)
         
-        # Mocking data to match your GeoJSON 'NM' property
-        mock_map_data = pd.DataFrame({
-            "Borough": ["Elmbridge", "Woking", "Spelthorne", "Runnymede", "Guildford"], # Update these to match your GeoJSON
-            "Score": [85, 72, 64, 91, 77]
-        })
-
         fig = px.choropleth_mapbox(
-            mock_map_data, geojson=geo, locations="Borough",
-            featureidkey="properties.NM", color="Score",
-            color_continuous_scale="Viridis", mapbox_style="carto-positron",
-            zoom=10, center={"lat": 51.3, "lon": -0.4}, opacity=0.6
+            map_data, geojson=geo, locations="Area_Name",
+            featureidkey="properties.NM", color=map_color_col,
+            color_continuous_scale="Viridis", mapbox_style="open-street-map",
+            zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6
         )
         fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
         st.plotly_chart(fig, use_container_width=True)
-    except Exception as e:
-        st.warning(f"Map Preview: Please check 'boundaries.geojson' is in the folder.")
+    except Exception:
+        st.warning("⚠️ Map error: Ensure 'boundaries.geojson' is present and names match.")
 
 with col_table:
-    st.subheader("Rankings")
-    st.table(pd.DataFrame({
-        "Area": ["North", "South", "East", "West"],
-        "Index": [85.2, 72.1, 64.9, 91.0]
-    }))
-
-# 5. Action Buttons
-st.markdown("---")
-if st.button("📥 Export Policy Briefing (PDF)"):
-    st.success("Briefing generated!")
+    st.subheader("Current Rankings")
+    table_df = map_data[['Area_Name', map_color_col]].sort_values(by=map_color_col, ascending=False)
+    st.dataframe(table_df, hide_index=True, use_container_width=True)
