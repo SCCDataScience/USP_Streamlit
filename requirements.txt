@@ -3,3 +3,5 @@ pandas
 plotly
 scikit-learn
 numpy
+matplotlib
+jinja2
