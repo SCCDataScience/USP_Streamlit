@@ -141,7 +141,7 @@ with tab_dashboard:
         st.subheader(f"Regional Snapshot ({latest_year})")
         try:
             with open('boundaries.geojson') as f: geo = json.load(f)
-            fig_map = px.choropleth_mapbox(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+            fig_map = px.choropleth_mapbox(map_df, geojson=geo, locations="Area_Code", featureidkey="properties.LAD23CD",
                 color="Final_Value", color_continuous_scale="viridis", mapbox_style="open-street-map",
                 zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
             fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
