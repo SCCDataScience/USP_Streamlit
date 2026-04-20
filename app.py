@@ -49,7 +49,7 @@ st.sidebar.info("💡 Confused? Check the **Data Sources** tab for the User Guid
 with st.sidebar.expander("🌍 Geography & Scope", expanded=True):
     all_areas = sorted(df_raw['Area_Name'].unique())
     selected_areas = st.multiselect("Select Areas to Display", all_areas, default=all_areas)
-    calc_scope = st.radio("Normalization Scope", ["Regional (All Surrey)", "Local (Selected only)"])
+    calc_scope = st.radio("Normalisation Scope", ["Regional (All Surrey)", "Local (Selected only)"])
 
 mode = st.sidebar.radio("Analysis Mode", ["Single Indicator", "Bespoke Index"])
 
@@ -124,7 +124,7 @@ tab_dashboard, tab_metadata, tab_feedback = st.tabs(["📊 Index Dashboard", "�
 with tab_dashboard:
     display_data = final_data[final_data['Area_Name'].isin(selected_areas)]
     latest_year = display_data['Year'].max()
-    st.title("🏙️ Strategic Places & Wellbeing Explorer")
+    st.title("🏙️ Understanding Surrey's Places")
     
     # Trend Chart
     st.subheader("Performance Trend")
@@ -142,7 +142,7 @@ with tab_dashboard:
         try:
             with open('boundaries.geojson') as f: geo = json.load(f)
             fig_map = px.choropleth_mapbox(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                color="Final_Value", color_continuous_scale="Viridis", mapbox_style="open-street-map",
+                color="Final_Value", color_continuous_scale="viridis", mapbox_style="open-street-map",
                 zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
             fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
             st.plotly_chart(fig_map, use_container_width=True)
@@ -157,7 +157,7 @@ with tab_dashboard:
     st.subheader("💡 Indicator Highlight Table")
     df_table = df_norm[(df_norm['Area_Name'].isin(selected_areas)) & (df_norm['Year'] == latest_year)]
     pivot_table = df_table.pivot(index='Area_Name', columns='Indicator_Name', values='Norm_Value').sort_index()
-    styled_table = pivot_table.style.background_gradient(cmap='Viridis', axis=None).format("{:.2f}")
+    styled_table = pivot_table.style.background_gradient(cmap='viridis', axis=None).format("{:.2f}")
     st.dataframe(styled_table, use_container_width=True)
 
     # Correlation Matrix
@@ -170,9 +170,9 @@ with tab_dashboard:
 with tab_metadata:
     st.title("📖 Methodology & User Guide")
     
-    with st.expander("⚖️ How is the score calculated? (Normalization)", expanded=True):
+    with st.expander("⚖️ How is the score calculated? (Normalisation)", expanded=True):
         st.write("""
-        We use **Min-Max Normalization** to compare different datasets (like £ and %). 
+        We use **Min-Max Normalisation** to compare different datasets (like £ and %). 
         - The highest performing area in the data is set to **1.0**.
         - The lowest performing area is set to **0.0**.
         - For 'Negative' indicators (like Fuel Poverty), we flip the score so that a lower poverty rate results in a higher wellbeing score.
