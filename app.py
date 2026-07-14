@@ -31,7 +31,7 @@ with col1:
         st.warning("Logo missing. Please upload surrey_logo.png")
 
 with col2:
-    st.markdown('<p class="title-text">Surrey Data Explorer</p>', unsafe_allow_html=True)
+    st.markdown('<p class="title-text">Welcome to the Surrey Data Explorer</p>', unsafe_allow_html=True)
 
 st.divider()
 
@@ -130,7 +130,7 @@ with tab_dashboard:
     # MODE 1: SINGLE INDICATOR (Sub-Category Fix)
     # ==========================================
     if app_mode == "1. Explore A Single Indicator":
-        st.subheader("Explore Single Indicator")
+        st.subheader("Explore A Single Indicator")
         selected_ind = st.sidebar.selectbox("Select Indicator", sorted(df_raw['Indicator_Name'].unique()))
         
         display_data = df_calc[df_calc['Indicator_Name'] == selected_ind]
@@ -183,7 +183,7 @@ with tab_dashboard:
     # ==========================================
     elif app_mode == "3. Build A Bespoke Index":
         st.subheader("Bespoke Index Builder")
-        with st.sidebar.expander("📊 Index Components", expanded=True):
+        with st.sidebar.expander("Index Components", expanded=True):
             selected_inds = st.multiselect("Select Indicators", sorted(df_raw['Indicator_Name'].unique()), default=sorted(df_raw['Indicator_Name'].unique())[:4])
         weight_method = st.sidebar.selectbox("Weighting Logic", ["Equal Weighting", "Statistical (PCA)"])
 
@@ -286,7 +286,7 @@ with tab_dashboard:
                 fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
                 st.plotly_chart(fig_biv, use_container_width=True)
                 
-            st.info("**How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Ind 1, Low Ind 2. Bright Blue (`1-3`) = Low Ind 1, High Ind 2.")
+            st.info("**How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Indicator 1, Low Indicator 2. Bright Blue (`1-3`) = Low Indicator 1, High Indicator 2.")
         except Exception as e:
             st.warning("Not enough variance in the selected data to create a 3x3 statistical grid. Try different indicators.")
 
