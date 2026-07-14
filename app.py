@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import json
 import numpy as np
 from sklearn.decomposition import PCA
@@ -12,8 +13,7 @@ st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
 # --- CORE MATH FUNCTIONS ---
 def normalize_series(series, direction):
     v_min, v_max = series.min(), series.max()
-    if v_max == v_min:
-        return series * 0 + 0.5
+    if v_max == v_min: return series * 0 + 0.5
     norm = (series - v_min) / (v_max - v_min)
     return 1 - norm if direction == 'Negative' else norm
 
@@ -23,37 +23,43 @@ def apply_pca_weights(df_pivot):
         pca.fit(df_pivot)
         weights = np.abs(pca.components_[0])
         return weights / weights.sum()
-    except:
-        return np.array([1/df_pivot.shape[1]] * df_pivot.shape[1])
+    except: return np.array([1/df_pivot.shape[1]] * df_pivot.shape[1])
 
 # --- DATA LOADING ---
 @st.cache_data
 def load_raw_data(file_path):
     df = pd.read_csv(file_path)
-    if 'Source' not in df.columns:
-        df['Source'] = "ONS / Nomis"
+    if 'Source' not in df.columns: df['Source'] = "ONS / Nomis"
     return df
 
-try:
-    df_raw = load_raw_data('USP_test.csv')
-except FileNotFoundError:
-    st.error("⚠️ CSV not found. Please upload to your GitHub repo.")
-    st.stop()
+@st.cache_data
+def load_mock_services():
+    # Mock data for Surrey local services (Pins)
+    return pd.DataFrame({
+        "Service_Name": ["Ashford Hospital", "Royal Surrey County", "Woking High School", "Guildford Library", "Elmbridge Leisure", "Epsom General Hospital"],
+        "Type": ["Health", "Health", "Education", "Public Service", "Public Service", "Health"],
+        "Lat": [51.426, 51.240, 51.325, 51.236, 51.370, 51.326],
+        "Lon": [-0.473, -0.602, -0.560, -0.575, -0.410, -0.270]
+    })
 
-# Load Map Boundaries
+try: df_raw = load_raw_data('USP_test.csv')
+except FileNotFoundError: st.error("⚠️ CSV file not found."); st.stop()
+
+df_services = load_mock_services()
+
 try:
-    with open('boundaries.geojson') as f:
-        geo = json.load(f)
-except:
-    geo = None
+    with open('boundaries.geojson') as f: geo = json.load(f)
+except: geo = None
 
 # --- GLOBAL SIDEBAR CONFIGURATION ---
 st.sidebar.title("🧭 Navigation")
 app_mode = st.sidebar.radio("What do you want to build?", [
-    "1. Explore Single Indicator", 
-    "2. View Existing Index", 
-    "3. Build Bespoke Index", 
-    "4. Compare Side-by-Side"
+    "1. Explore A Single Indicator", 
+    "2. View An Existing Index", 
+    "3. Build A Bespoke Index", 
+    "4. Compare Side-by-Side",
+    "5. Spatial Correlation (Bivariate Map)",
+    "6. Local Services Mapper (Pins)"
 ])
 
 st.sidebar.divider()
@@ -62,67 +68,57 @@ all_areas = sorted(df_raw['Area_Name'].unique())
 selected_areas = st.sidebar.multiselect("Select Areas to Display", all_areas, default=all_areas)
 calc_scope = st.sidebar.radio("Normalisation Scope", ["Regional (All Surrey)", "Local (Selected only)"])
 
-# Filter Scope for Math
 df_calc = df_raw[df_raw['Area_Name'].isin(selected_areas)].copy() if calc_scope == "Local (Selected only)" else df_raw.copy()
 
 # --- MAIN INTERFACE (TABS) ---
 tab_dashboard, tab_metadata, tab_feedback = st.tabs(["📊 Dashboard", "📖 Data Sources & Help", "💬 Feedback"])
 
 with tab_dashboard:
-    st.title("🏙️ Strategic Places & Wellbeing Explorer")
+    st.title("🏙️ Understanding Surrey's Place's")
     
+   # ==========================================
+    # MODE 1: SINGLE INDICATOR (Sub-Category Fix)
     # ==========================================
-    # MODE 1: SINGLE INDICATOR (Updated with Sub-Categories)
-    # ==========================================
-    if app_mode == "1. Explore A Single Indicator":
+    if app_mode == "1. Explore Single Indicator":
         st.subheader("Explore Single Indicator")
         selected_ind = st.sidebar.selectbox("Select Indicator", sorted(df_raw['Indicator_Name'].unique()))
         
         display_data = df_calc[df_calc['Indicator_Name'] == selected_ind]
         display_data = display_data[display_data['Area_Name'].isin(selected_areas)]
         latest_year = display_data['Year'].max()
-        map_df = display_data[display_data['Year'] == latest_year]
         
-        # --- Check for Sub-Categories ---
-        has_sub_categories = False
-        if 'Sub_Category' in display_data.columns:
-            # Drop empty/null sub-categories to see if actual breakdown exists
-            valid_subs = display_data['Sub_Category'].dropna().unique()
-            if len(valid_subs) > 0:
-                has_sub_categories = True
+        has_sub_categories = 'Sub_Category' in display_data.columns and len(display_data['Sub_Category'].dropna().unique()) > 0
         
         if has_sub_categories:
             st.markdown(f"**Composition Breakdown ({latest_year})**")
-            # Stacked Bar Chart
-            fig_bar = px.bar(map_df, x="Area_Name", y="Value", color="Sub_Category", barmode="stack",
-                             labels={"Value": map_df['Unit'].iloc[0] if not map_df.empty else "Value"},
-                             color_discrete_sequence=px.colors.qualitative.Prism)
-            fig_bar.update_layout(xaxis_title="Area", yaxis_title="Percentage / Value")
+            map_df = display_data[display_data['Year'] == latest_year]
+            fig_bar = px.bar(map_df, x="Area_Name", y="Value", color="Sub_Category", barmode="stack", color_discrete_sequence=px.colors.qualitative.Prism)
             st.plotly_chart(fig_bar, use_container_width=True)
             
-            st.info("💡 **Note:** Because this indicator is a composition of multiple sub-categories, it is visualised as a stacked bar rather than a time-series trend line.")
+            st.divider()
+            st.markdown("### **Trend & Map View**")
+            selected_sub = st.selectbox("Select Sub-Category to Map and Track:", display_data['Sub_Category'].dropna().unique())
+            active_data = display_data[display_data['Sub_Category'] == selected_sub]
         else:
-            # Standard Line Chart
-            st.markdown("**Performance Trend**")
-            fig_line = px.line(display_data, x="Year", y="Value", color="Area_Name", markers=True)
-            fig_line.update_layout(xaxis_type='category')
-            st.plotly_chart(fig_line, use_container_width=True)
+            active_data = display_data
+            
+        map_df_active = active_data[active_data['Year'] == latest_year]
+
+        # Trend & Map Render
+        fig_line = px.line(active_data, x="Year", y="Value", color="Area_Name", markers=True)
+        fig_line.update_layout(xaxis_type='category')
+        st.plotly_chart(fig_line, use_container_width=True)
         
-        # --- Map and Table Rendering ---
         col1, col2 = st.columns([2, 1])
         with col1:
-            st.markdown(f"**Map View ({latest_year})**")
-            if has_sub_categories:
-                st.warning("Maps require a single aggregate value. Sub-category mapping will be supported in a future update.")
-            elif geo:
-                fig_map = px.choropleth_mapbox(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+            if geo:
+                fig_map = px.choropleth_mapbox(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
                     color="Value", color_continuous_scale="viridis", mapbox_style="open-street-map",
                     zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
                 fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_map, use_container_width=True)
         with col2:
-            st.markdown("**Current Data Table**")
-            st.dataframe(map_df[['Area_Name', 'Value'] + (['Sub_Category'] if has_sub_categories else [])].sort_values('Value', ascending=False), hide_index=True)
+            st.dataframe(map_df_active[['Area_Name', 'Value']].sort_values('Value', ascending=False), hide_index=True)
 
     # ==========================================
     # MODE 2: EXISTING INDEX
@@ -206,7 +202,82 @@ with tab_dashboard:
                     zoom=8.5, center={"lat": 51.3, "lon": -0.4}, opacity=0.7)
                 fig_b.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_b, use_container_width=True)
+
+    # ==========================================
+    # MODE 5: SPATIAL CORRELATION (BIVARIATE MAP)
+    # ==========================================
+    elif app_mode == "5. Spatial Correlation (Bivariate Map)":
+        st.subheader("Bivariate Correlation Map")
+        st.write("This map blends two indicators to identify complex spatial relationships (e.g., areas with High Health Deprivation AND Low Skills).")
+        
+        col1, col2 = st.columns(2)
+        with col1: ind_x = st.selectbox("Indicator 1 (X-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=0)
+        with col2: ind_y = st.selectbox("Indicator 2 (Y-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=1)
+
+        # Get latest data
+        df_x = df_calc[df_calc['Indicator_Name'] == ind_x].sort_values('Year').groupby('Area_Name').last().reset_index()
+        df_y = df_calc[df_calc['Indicator_Name'] == ind_y].sort_values('Year').groupby('Area_Name').last().reset_index()
+        
+        biv_df = pd.merge(df_x[['Area_Name', 'Value']], df_y[['Area_Name', 'Value']], on='Area_Name', suffixes=('_X', '_Y'))
+        
+        # Calculate Terciles (3x3 Grid) safely handling low data points
+        try:
+            biv_df['X_Quant'] = pd.qcut(biv_df['Value_X'], 3, labels=['1', '2', '3'], duplicates='drop').astype(str)
+            biv_df['Y_Quant'] = pd.qcut(biv_df['Value_Y'], 3, labels=['1', '2', '3'], duplicates='drop').astype(str)
+            biv_df['Biv_Class'] = biv_df['X_Quant'] + "-" + biv_df['Y_Quant']
             
+            # Standard Tequila/Pink Bivariate Palette
+            biv_colors = {"3-3": "#3F2949", "2-3": "#435786", "1-3": "#4885C1", "3-2": "#77324C", "2-2": "#806A8A", "1-2": "#89A1C8", "3-1": "#AE3A4E", "2-1": "#BC7C8F", "1-1": "#CABED0"}
+            
+            if geo:
+                fig_biv = px.choropleth_mapbox(biv_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                    color="Biv_Class", color_discrete_map=biv_colors, mapbox_style="open-street-map",
+                    zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
+                fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
+                st.plotly_chart(fig_biv, use_container_width=True)
+                
+            st.info("🎨 **How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Ind 1, Low Ind 2. Bright Blue (`1-3`) = Low Ind 1, High Ind 2.")
+        except Exception as e:
+            st.warning("Not enough variance in the selected data to create a 3x3 statistical grid. Try different indicators.")
+
+    # ==========================================
+    # MODE 6: LOCAL SERVICES MAPPER (PINS)
+    # ==========================================
+    elif app_mode == "6. Local Services Mapper (Pins)":
+        st.subheader("Asset & Services Mapper")
+        st.write("Overlay local infrastructure (Schools, GP Surgeries, Libraries) on top of deprivation or economic data.")
+        
+        base_ind = st.selectbox("Select Background Heatmap Layer", sorted(df_raw['Indicator_Name'].unique()))
+        selected_types = st.multiselect("Select Services to Display", df_services['Type'].unique(), default=df_services['Type'].unique())
+        
+        df_base = df_calc[df_calc['Indicator_Name'] == base_ind]
+        map_df_base = df_base[df_base['Year'] == df_base['Year'].max()]
+        filtered_services = df_services[df_services['Type'].isin(selected_types)]
+
+        if geo:
+            # We use Graph Objects (go) to combine two different map layers
+            fig = go.Figure()
+            
+            # Layer 1: The Borough Polygons
+            fig.add_trace(go.Choroplethmapbox(
+                geojson=geo, locations=map_df_base['Area_Name'], featureidkey="properties.LAD23NM",
+                z=map_df_base['Value'], colorscale="Blues", marker_opacity=0.5,
+                name="Heatmap", hoverinfo="location+z"
+            ))
+            
+            # Layer 2: The Service Pins
+            color_map = {"Health": "red", "Education": "green", "Public Service": "orange"}
+            for s_type in selected_types:
+                type_data = filtered_services[filtered_services['Type'] == s_type]
+                fig.add_trace(go.Scattermapbox(
+                    lat=type_data['Lat'], lon=type_data['Lon'], mode='markers',
+                    marker=go.scattermapbox.Marker(size=12, color=color_map.get(s_type, "blue")),
+                    text=type_data['Service_Name'], hoverinfo='text', name=s_type
+                ))
+
+            fig.update_layout(mapbox_style="open-street-map", mapbox_zoom=9, mapbox_center={"lat": 51.3, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
+            st.plotly_chart(fig, use_container_width=True)
+
 with tab_metadata:
     st.write("Methodology and definitions live here.")
     
