@@ -10,6 +10,31 @@ from datetime import datetime
 # 1. Page Configuration
 st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
 
+# --- CUSTOM HEADER BANNER ---
+st.markdown("""
+    <style>
+    .title-text {
+        color: #1A5632; /* Dark Green */
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+col1, col2 = st.columns([1, 4])
+with col1:
+    try:
+        # Ensure the image is uploaded to GitHub as surrey_logo.png
+        st.image("surrey_logo.png", use_container_width=True)
+    except FileNotFoundError:
+        st.warning("Logo missing. Please upload surrey_logo.png")
+
+with col2:
+    st.markdown('<p class="title-text">Understanding Surrey\'s Places</p>', unsafe_allow_html=True)
+
+st.divider()
+
 # --- CORE MATH FUNCTIONS ---
 def normalize_series(series, direction):
     v_min, v_max = series.min(), series.max()
