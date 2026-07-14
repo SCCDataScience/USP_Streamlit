@@ -123,7 +123,7 @@ df_calc = df_raw[df_raw['Area_Name'].isin(selected_areas)].copy() if calc_scope 
 # --- MAIN INTERFACE (TABS) ---
 tab_dashboard, tab_metadata, tab_feedback = st.tabs(["Dashboard", "Data Sources & Help", "Feedback"])
 
-#with tab_dashboard:
+with tab_dashboard:
     #st.title("Understanding Surrey's Places")
     
    # ==========================================
