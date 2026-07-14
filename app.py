@@ -32,11 +32,17 @@ import os
 def load_raw_data(file_path):
     df = pd.read_csv(file_path)
     
-    # FIX 1: Delete any "Ghost Rows" (completely blank rows) left by Excel
+    # Delete completely blank rows left by Excel
     df = df.dropna(how='all')
     
-    # Ensure all Indicator Names are treated as text (prevents sorting crashes)
-    df['Indicator_Name'] = df['Indicator_Name'].astype(str)
+    # 1. Strip invisible spaces from names so they match the map perfectly
+    df['Indicator_Name'] = df['Indicator_Name'].astype(str).str.strip()
+    df['Area_Name'] = df['Area_Name'].astype(str).str.strip()
+    
+    # 2. Force the 'Value' column to be numeric (removes commas, handles errors)
+    if df['Value'].dtype == object:
+        df['Value'] = df['Value'].astype(str).str.replace(',', '')
+        df['Value'] = pd.to_numeric(df['Value'], errors='coerce')
     
     if 'Source' not in df.columns: 
         df['Source'] = "ONS / Nomis"
@@ -98,7 +104,7 @@ with tab_dashboard:
    # ==========================================
     # MODE 1: SINGLE INDICATOR (Sub-Category Fix)
     # ==========================================
-    if app_mode == "1. Explore Single Indicator":
+    if app_mode == "1. Explore A Single Indicator":
         st.subheader("Explore Single Indicator")
         selected_ind = st.sidebar.selectbox("Select Indicator", sorted(df_raw['Indicator_Name'].unique()))
         
