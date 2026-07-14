@@ -1,243 +1,320 @@
-﻿Geography_Level,Area_Code,Area_Name,Parent_Area,Theme,Indicator_Name,Year,Value,Unit,Direction
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Housing Benefit,2021,7.52050026,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Housing Benefit,2021,7.087890497,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Housing Benefit,2021,7.090317404,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Housing Benefit,2021,7.177247031,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Housing Benefit,2021,7.749811579,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Housing Benefit,2021,7.922823103,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Housing Benefit,2021,8.498422481,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Housing Benefit,2021,5.923761265,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Housing Benefit,2021,6.92508209,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Housing Benefit,2021,6.858085168,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Housing Benefit,2021,7.86123684,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Housing Benefit,2022,6.11508855,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Housing Benefit,2022,6.084222935,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Housing Benefit,2022,5.934379458,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Housing Benefit,2022,6.185929512,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Housing Benefit,2022,6.294147547,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Housing Benefit,2022,6.327746306,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Housing Benefit,2022,7.019346002,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Housing Benefit,2022,4.934788242,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Housing Benefit,2022,5.98248747,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Housing Benefit,2022,5.591230963,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Housing Benefit,2022,6.339171504,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Fuel Poverty,2021,5.840214553,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Fuel Poverty,2021,6.600432507,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Fuel Poverty,2021,7.085093543,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Fuel Poverty,2021,6.752813672,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Fuel Poverty,2021,5.959329218,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Fuel Poverty,2021,6.404670369,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Fuel Poverty,2021,5.997970789,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Fuel Poverty,2021,5.558178939,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Fuel Poverty,2021,6.522771061,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Fuel Poverty,2021,6.819687021,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Fuel Poverty,2021,6.073496396,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Fuel Poverty,2022,6.056225179,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Fuel Poverty,2022,7.278353706,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Fuel Poverty,2022,7.850241546,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Fuel Poverty,2022,7.142306209,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Fuel Poverty,2022,6.858726497,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Fuel Poverty,2022,6.873016319,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Fuel Poverty,2022,6.880338896,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Fuel Poverty,2022,5.798213405,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Fuel Poverty,2022,6.710928676,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Fuel Poverty,2022,7.274085138,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Fuel Poverty,2022,6.519914187,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Overcrowded Housing,2021,6.04096595,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Overcrowded Housing,2021,6.80902498,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Overcrowded Housing,2021,7.168399014,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Overcrowded Housing,2021,6.648431394,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Overcrowded Housing,2021,6.605560868,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Overcrowded Housing,2021,8.283915143,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Overcrowded Housing,2021,8.9922049,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Overcrowded Housing,2021,5.037858463,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Overcrowded Housing,2021,5.521564393,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Overcrowded Housing,2021,4.728084416,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Overcrowded Housing,2021,8.923911116,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Overcrowded Housing,2022,6.04096595,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Overcrowded Housing,2022,6.80902498,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Overcrowded Housing,2022,7.168399014,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Overcrowded Housing,2022,6.648431394,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Overcrowded Housing,2022,6.605560868,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Overcrowded Housing,2022,8.283915143,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Overcrowded Housing,2022,8.9922049,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Overcrowded Housing,2022,5.037858463,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Overcrowded Housing,2022,5.521564393,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Overcrowded Housing,2022,4.728084416,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Overcrowded Housing,2022,8.923911116,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Homelessness,2021,0.962219308,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Homelessness,2021,0.883001787,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Homelessness,2021,0.896909825,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Homelessness,2021,1.057587452,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Homelessness,2021,0.838706745,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Homelessness,2021,1.357745761,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Homelessness,2021,0.989914742,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Homelessness,2021,0.953747846,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Homelessness,2021,1.262905772,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Homelessness,2021,0.946839467,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Homelessness,2021,1.01495787,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Housing,Homelessness,2022,5.575539568,Rate per 1k,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Homelessness,2022,7.092651757,Rate per 1k,Negative
-Borough and District,E07000209,Guildford,Surrey,Housing,Homelessness,2022,6.774193548,Rate per 1k,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Housing,Homelessness,2022,7.223719677,Rate per 1k,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Homelessness,2022,8.177257525,Rate per 1k,Negative
-Borough and District,E07000212,Runnymede,Surrey,Housing,Homelessness,2022,6.436781609,Rate per 1k,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Housing,Homelessness,2022,9.138755981,Rate per 1k,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Housing,Homelessness,2022,4.055555556,Rate per 1k,Negative
-Borough and District,E07000215,Tandridge,Surrey,Housing,Homelessness,2022,6.853932584,Rate per 1k,Negative
-Borough and District,E07000216,Waverley,Surrey,Housing,Homelessness,2022,4.828244275,Rate per 1k,Negative
-Borough and District,E07000217,Woking,Surrey,Housing,Homelessness,2022,6.615663208,Rate per 1k,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Unemployment Benefit,2021,3.365961712,Percentage claimants,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Unemployment Benefit,2021,3.311112017,Percentage claimants,Negative
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Unemployment Benefit,2021,2.785204991,Percentage claimants,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Unemployment Benefit,2021,3.127692067,Percentage claimants,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Unemployment Benefit,2021,3.625021076,Percentage claimants,Negative
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Unemployment Benefit,2021,3.54151059,Percentage claimants,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Unemployment Benefit,2021,4.69105229,Percentage claimants,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Unemployment Benefit,2021,3.392822242,Percentage claimants,Negative
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Unemployment Benefit,2021,3.762008941,Percentage claimants,Negative
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Unemployment Benefit,2021,2.885014813,Percentage claimants,Negative
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Unemployment Benefit,2021,3.762349438,Percentage claimants,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Unemployment Benefit,2022,2.874219583,Percentage claimants,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Unemployment Benefit,2022,2.726936116,Percentage claimants,Negative
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Unemployment Benefit,2022,2.348105357,Percentage claimants,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Unemployment Benefit,2022,2.644638574,Percentage claimants,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Unemployment Benefit,2022,3.133306971,Percentage claimants,Negative
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Unemployment Benefit,2022,3.088035025,Percentage claimants,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Unemployment Benefit,2022,4.209872719,Percentage claimants,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Unemployment Benefit,2022,2.730794714,Percentage claimants,Negative
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Unemployment Benefit,2022,3.072149417,Percentage claimants,Negative
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Unemployment Benefit,2022,2.350839732,Percentage claimants,Negative
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Unemployment Benefit,2022,3.300526769,Percentage claimants,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Jobs density,2021,74.24915542,Jobs ratio,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Jobs density,2021,63.1982386,Jobs ratio,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Jobs density,2021,84.7042495,Jobs ratio,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Jobs density,2021,93.977602,Jobs ratio,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Jobs density,2021,76.97213609,Jobs ratio,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Jobs density,2021,98.7536607,Jobs ratio,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Jobs density,2021,63.33225073,Jobs ratio,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Jobs density,2021,102.6092055,Jobs ratio,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Jobs density,2021,64.68182251,Jobs ratio,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Jobs density,2021,75.32079813,Jobs ratio,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Jobs density,2021,77.95371498,Jobs ratio,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Jobs density,2022,75.31515069,Jobs ratio,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Jobs density,2022,63.18406946,Jobs ratio,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Jobs density,2022,80.79502303,Jobs ratio,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Jobs density,2022,89.69834058,Jobs ratio,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Jobs density,2022,75.7925262,Jobs ratio,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Jobs density,2022,99.60495661,Jobs ratio,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Jobs density,2022,61.95584831,Jobs ratio,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Jobs density,2022,93.86387897,Jobs ratio,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Jobs density,2022,60.51322781,Jobs ratio,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Jobs density,2022,73.91286494,Jobs ratio,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Jobs density,2022,75.64420911,Jobs ratio,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification,2021,43.85224018,Percentage with degree or higher,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification,2021,35.97753888,Percentage with degree or higher,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification,2021,39.52073471,Percentage with degree or higher,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification,2021,37.93618856,Percentage with degree or higher,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification,2021,33.95981034,Percentage with degree or higher,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification,2021,29.92363435,Percentage with degree or higher,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification,2021,25.94731652,Percentage with degree or higher,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification,2021,34.46798072,Percentage with degree or higher,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification,2021,32.96823167,Percentage with degree or higher,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification,2021,40.13726174,Percentage with degree or higher,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification,2021,38.35827493,Percentage with degree or higher,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification,2022,43.85224018,Percentage with degree or higher,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification,2022,35.97753888,Percentage with degree or higher,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification,2022,39.52073471,Percentage with degree or higher,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification,2022,37.93618856,Percentage with degree or higher,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification,2022,33.95981034,Percentage with degree or higher,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification,2022,29.92363435,Percentage with degree or higher,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification,2022,25.94731652,Percentage with degree or higher,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification,2022,34.46798072,Percentage with degree or higher,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification,2022,32.96823167,Percentage with degree or higher,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification,2022,40.13726174,Percentage with degree or higher,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification,2022,38.35827493,Percentage with degree or higher,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Average Earnings,2021,673.3,Average earnings in £s,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Average Earnings,2021,546.6,Average earnings in £s,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Average Earnings,2021,651.6,Average earnings in £s,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Average Earnings,2021,655.9,Average earnings in £s,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Average Earnings,2021,624.4,Average earnings in £s,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Average Earnings,2021,742.2,Average earnings in £s,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Average Earnings,2021,684,Average earnings in £s,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Average Earnings,2021,722.2,Average earnings in £s,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Average Earnings,2021,545.3,Average earnings in £s,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Average Earnings,2021,563,Average earnings in £s,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Average Earnings,2021,712.2,Average earnings in £s,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Average Earnings,2022,628.5,Average earnings in £s,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Average Earnings,2022,540.2,Average earnings in £s,Positive
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,Average Earnings,2022,659.9,Average earnings in £s,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Average Earnings,2022,628.2,Average earnings in £s,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Average Earnings,2022,652.1,Average earnings in £s,Positive
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Average Earnings,2022,672.7,Average earnings in £s,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Average Earnings,2022,656.5,Average earnings in £s,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Average Earnings,2022,725.2,Average earnings in £s,Positive
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Average Earnings,2022,570.6,Average earnings in £s,Positive
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,Average Earnings,2022,529.8,Average earnings in £s,Positive
-Borough and District,E07000217,Woking,Surrey,Education and Skills,Average Earnings,2022,662.2,Average earnings in £s,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,No Qualification,2021,13.23042571,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,No Qualification,2021,15.83376124,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,No Qualification,2021,14.20476245,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,No Qualification,2021,15.96866916,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,No Qualification,2021,16.58433055,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,No Qualification,2021,18.26774489,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,No Qualification,2021,20.42157026,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,No Qualification,2021,14.98802343,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,No Qualification,2021,17.13487343,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,No Qualification,2021,15.17265434,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000217,Woking,Surrey,Education and Skills,No Qualification,2021,15.20742565,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,No Qualification,2022,13.23042571,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,No Qualification,2022,15.83376124,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000209,Guildford,Surrey,Education and Skills,No Qualification,2022,14.20476245,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,No Qualification,2022,15.96866916,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,No Qualification,2022,16.58433055,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000212,Runnymede,Surrey,Education and Skills,No Qualification,2022,18.26774489,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,No Qualification,2022,20.42157026,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,No Qualification,2022,14.98802343,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000215,Tandridge,Surrey,Education and Skills,No Qualification,2022,17.13487343,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000216,Waverley,Surrey,Education and Skills,No Qualification,2022,15.17265434,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000217,Woking,Surrey,Education and Skills,No Qualification,2022,15.20742565,Percentage with no qualifications degree or higher,Negative
-Borough and District,E07000207,Elmbridge,Surrey,Business,VAT units,2021,1217.067406,Count of VAT registered businesses,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Business,VAT units,2021,868.4661176,Count of VAT registered businesses,Positive
-Borough and District,E07000209,Guildford,Surrey,Business,VAT units,2021,889.3946197,Count of VAT registered businesses,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Business,VAT units,2021,1187.446159,Count of VAT registered businesses,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Business,VAT units,2021,902.7731961,Count of VAT registered businesses,Positive
-Borough and District,E07000212,Runnymede,Surrey,Business,VAT units,2021,848.7706872,Count of VAT registered businesses,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Business,VAT units,2021,879.3439428,Count of VAT registered businesses,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Business,VAT units,2021,964.7097625,Count of VAT registered businesses,Positive
-Borough and District,E07000215,Tandridge,Surrey,Business,VAT units,2021,1043.46999,Count of VAT registered businesses,Positive
-Borough and District,E07000216,Waverley,Surrey,Business,VAT units,2021,1246.216842,Count of VAT registered businesses,Positive
-Borough and District,E07000217,Woking,Surrey,Business,VAT units,2021,984.1656516,Count of VAT registered businesses,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Business,VAT units,2022,1200.72105,Count of VAT registered businesses,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Business,VAT units,2022,870.3096019,Count of VAT registered businesses,Positive
-Borough and District,E07000209,Guildford,Surrey,Business,VAT units,2022,871.5763109,Count of VAT registered businesses,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Business,VAT units,2022,1170.953337,Count of VAT registered businesses,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Business,VAT units,2022,887.5414662,Count of VAT registered businesses,Positive
-Borough and District,E07000212,Runnymede,Surrey,Business,VAT units,2022,850.0185704,Count of VAT registered businesses,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Business,VAT units,2022,871.4579189,Count of VAT registered businesses,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Business,VAT units,2022,960.7244083,Count of VAT registered businesses,Positive
-Borough and District,E07000215,Tandridge,Surrey,Business,VAT units,2022,1045.744218,Count of VAT registered businesses,Positive
-Borough and District,E07000216,Waverley,Surrey,Business,VAT units,2022,1246.253028,Count of VAT registered businesses,Positive
-Borough and District,E07000217,Woking,Surrey,Business,VAT units,2022,1017.907944,Count of VAT registered businesses,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Business,GVA,2021,34830,GVA per head in £s,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Business,GVA,2021,24994,GVA per head in £s,Positive
-Borough and District,E07000209,Guildford,Surrey,Business,GVA,2021,37193,GVA per head in £s,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Business,GVA,2021,40624,GVA per head in £s,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Business,GVA,2021,29538,GVA per head in £s,Positive
-Borough and District,E07000212,Runnymede,Surrey,Business,GVA,2021,49208,GVA per head in £s,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Business,GVA,2021,27936,GVA per head in £s,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Business,GVA,2021,36928,GVA per head in £s,Positive
-Borough and District,E07000215,Tandridge,Surrey,Business,GVA,2021,25675,GVA per head in £s,Positive
-Borough and District,E07000216,Waverley,Surrey,Business,GVA,2021,30774,GVA per head in £s,Positive
-Borough and District,E07000217,Woking,Surrey,Business,GVA,2021,32564,GVA per head in £s,Positive
-Borough and District,E07000207,Elmbridge,Surrey,Business,GVA,2022,45358.76816,GVA per head in £s,Positive
-Borough and District,E07000208,Epsom and Ewell,Surrey,Business,GVA,2022,22188.29482,GVA per head in £s,Positive
-Borough and District,E07000209,Guildford,Surrey,Business,GVA,2022,35460.56781,GVA per head in £s,Positive
-Borough and District,E07000210,Mole Valley,Surrey,Business,GVA,2022,48652.39299,GVA per head in £s,Positive
-Borough and District,E07000211,Reigate and Banstead,Surrey,Business,GVA,2022,42361.91432,GVA per head in £s,Positive
-Borough and District,E07000212,Runnymede,Surrey,Business,GVA,2022,70671.22022,GVA per head in £s,Positive
-Borough and District,E07000213,Spelthorne,Surrey,Business,GVA,2022,34744.78736,GVA per head in £s,Positive
-Borough and District,E07000214,Surrey Heath,Surrey,Business,GVA,2022,40274.24446,GVA per head in £s,Positive
-Borough and District,E07000215,Tandridge,Surrey,Business,GVA,2022,21768.9183,GVA per head in £s,Positive
-Borough and District,E07000216,Waverley,Surrey,Business,GVA,2022,26059.38602,GVA per head in £s,Positive
-Borough and District,E07000217,Woking,Surrey,Business,GVA,2022,33526.90549,GVA per head in £s,Positive
+﻿Geography_Level,Area_Code,Area_Name,Parent_Area,Theme,Indicator_Name,Sub_Category,Year,Value,Unit,Direction
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Housing Benefit,,2021,7.52050026,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Housing Benefit,,2021,7.087890497,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Housing Benefit,,2021,7.090317404,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Housing Benefit,,2021,7.177247031,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Housing Benefit,,2021,7.749811579,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Housing Benefit,,2021,7.922823103,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Housing Benefit,,2021,8.498422481,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Housing Benefit,,2021,5.923761265,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Housing Benefit,,2021,6.92508209,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Housing Benefit,,2021,6.858085168,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Housing Benefit,,2021,7.86123684,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Housing Benefit,,2022,6.11508855,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Housing Benefit,,2022,6.084222935,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Housing Benefit,,2022,5.934379458,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Housing Benefit,,2022,6.185929512,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Housing Benefit,,2022,6.294147547,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Housing Benefit,,2022,6.327746306,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Housing Benefit,,2022,7.019346002,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Housing Benefit,,2022,4.934788242,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Housing Benefit,,2022,5.98248747,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Housing Benefit,,2022,5.591230963,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Housing Benefit,,2022,6.339171504,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Fuel Poverty,,2021,5.840214553,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Fuel Poverty,,2021,6.600432507,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Fuel Poverty,,2021,7.085093543,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Fuel Poverty,,2021,6.752813672,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Fuel Poverty,,2021,5.959329218,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Fuel Poverty,,2021,6.404670369,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Fuel Poverty,,2021,5.997970789,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Fuel Poverty,,2021,5.558178939,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Fuel Poverty,,2021,6.522771061,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Fuel Poverty,,2021,6.819687021,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Fuel Poverty,,2021,6.073496396,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Fuel Poverty,,2022,6.056225179,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Fuel Poverty,,2022,7.278353706,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Fuel Poverty,,2022,7.850241546,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Fuel Poverty,,2022,7.142306209,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Fuel Poverty,,2022,6.858726497,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Fuel Poverty,,2022,6.873016319,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Fuel Poverty,,2022,6.880338896,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Fuel Poverty,,2022,5.798213405,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Fuel Poverty,,2022,6.710928676,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Fuel Poverty,,2022,7.274085138,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Fuel Poverty,,2022,6.519914187,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Overcrowded Housing,,2021,6.04096595,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Overcrowded Housing,,2021,6.80902498,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Overcrowded Housing,,2021,7.168399014,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Overcrowded Housing,,2021,6.648431394,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Overcrowded Housing,,2021,6.605560868,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Overcrowded Housing,,2021,8.283915143,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Overcrowded Housing,,2021,8.9922049,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Overcrowded Housing,,2021,5.037858463,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Overcrowded Housing,,2021,5.521564393,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Overcrowded Housing,,2021,4.728084416,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Overcrowded Housing,,2021,8.923911116,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Overcrowded Housing,,2022,6.04096595,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Overcrowded Housing,,2022,6.80902498,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Overcrowded Housing,,2022,7.168399014,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Overcrowded Housing,,2022,6.648431394,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Overcrowded Housing,,2022,6.605560868,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Overcrowded Housing,,2022,8.283915143,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Overcrowded Housing,,2022,8.9922049,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Overcrowded Housing,,2022,5.037858463,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Overcrowded Housing,,2022,5.521564393,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Overcrowded Housing,,2022,4.728084416,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Overcrowded Housing,,2022,8.923911116,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Homelessness,,2021,0.962219308,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Homelessness,,2021,0.883001787,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Homelessness,,2021,0.896909825,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Homelessness,,2021,1.057587452,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Homelessness,,2021,0.838706745,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Homelessness,,2021,1.357745761,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Homelessness,,2021,0.989914742,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Homelessness,,2021,0.953747846,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Homelessness,,2021,1.262905772,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Homelessness,,2021,0.946839467,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Homelessness,,2021,1.01495787,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Housing,Homelessness,,2022,5.575539568,Rate per 1k,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Housing,Homelessness,,2022,7.092651757,Rate per 1k,Negative
+Borough and District,E07000209,Guildford,Surrey,Housing,Homelessness,,2022,6.774193548,Rate per 1k,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Housing,Homelessness,,2022,7.223719677,Rate per 1k,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Housing,Homelessness,,2022,8.177257525,Rate per 1k,Negative
+Borough and District,E07000212,Runnymede,Surrey,Housing,Homelessness,,2022,6.436781609,Rate per 1k,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Housing,Homelessness,,2022,9.138755981,Rate per 1k,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Housing,Homelessness,,2022,4.055555556,Rate per 1k,Negative
+Borough and District,E07000215,Tandridge,Surrey,Housing,Homelessness,,2022,6.853932584,Rate per 1k,Negative
+Borough and District,E07000216,Waverley,Surrey,Housing,Homelessness,,2022,4.828244275,Rate per 1k,Negative
+Borough and District,E07000217,Woking,Surrey,Housing,Homelessness,,2022,6.615663208,Rate per 1k,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Unemployment Benefit,,2021,3.365961712,Percentage claimants,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Unemployment Benefit,,2021,3.311112017,Percentage claimants,Negative
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Unemployment Benefit,,2021,2.785204991,Percentage claimants,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Unemployment Benefit,,2021,3.127692067,Percentage claimants,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Unemployment Benefit,,2021,3.625021076,Percentage claimants,Negative
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Unemployment Benefit,,2021,3.54151059,Percentage claimants,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Unemployment Benefit,,2021,4.69105229,Percentage claimants,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Unemployment Benefit,,2021,3.392822242,Percentage claimants,Negative
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Unemployment Benefit,,2021,3.762008941,Percentage claimants,Negative
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Unemployment Benefit,,2021,2.885014813,Percentage claimants,Negative
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Unemployment Benefit,,2021,3.762349438,Percentage claimants,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Unemployment Benefit,,2022,2.874219583,Percentage claimants,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Unemployment Benefit,,2022,2.726936116,Percentage claimants,Negative
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Unemployment Benefit,,2022,2.348105357,Percentage claimants,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Unemployment Benefit,,2022,2.644638574,Percentage claimants,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Unemployment Benefit,,2022,3.133306971,Percentage claimants,Negative
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Unemployment Benefit,,2022,3.088035025,Percentage claimants,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Unemployment Benefit,,2022,4.209872719,Percentage claimants,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Unemployment Benefit,,2022,2.730794714,Percentage claimants,Negative
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Unemployment Benefit,,2022,3.072149417,Percentage claimants,Negative
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Unemployment Benefit,,2022,2.350839732,Percentage claimants,Negative
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Unemployment Benefit,,2022,3.300526769,Percentage claimants,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Jobs density,,2021,74.24915542,Jobs ratio,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Jobs density,,2021,63.1982386,Jobs ratio,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Jobs density,,2021,84.7042495,Jobs ratio,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Jobs density,,2021,93.977602,Jobs ratio,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Jobs density,,2021,76.97213609,Jobs ratio,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Jobs density,,2021,98.7536607,Jobs ratio,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Jobs density,,2021,63.33225073,Jobs ratio,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Jobs density,,2021,102.6092055,Jobs ratio,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Jobs density,,2021,64.68182251,Jobs ratio,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Jobs density,,2021,75.32079813,Jobs ratio,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Jobs density,,2021,77.95371498,Jobs ratio,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Jobs density,,2022,75.31515069,Jobs ratio,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Jobs density,,2022,63.18406946,Jobs ratio,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Jobs density,,2022,80.79502303,Jobs ratio,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Jobs density,,2022,89.69834058,Jobs ratio,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Jobs density,,2022,75.7925262,Jobs ratio,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Jobs density,,2022,99.60495661,Jobs ratio,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Jobs density,,2022,61.95584831,Jobs ratio,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Jobs density,,2022,93.86387897,Jobs ratio,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Jobs density,,2022,60.51322781,Jobs ratio,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Jobs density,,2022,73.91286494,Jobs ratio,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Jobs density,,2022,75.64420911,Jobs ratio,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Average Earnings,,2021,673.3,Average earnings in £s,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Average Earnings,,2021,546.6,Average earnings in £s,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Average Earnings,,2021,651.6,Average earnings in £s,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Average Earnings,,2021,655.9,Average earnings in £s,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Average Earnings,,2021,624.4,Average earnings in £s,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Average Earnings,,2021,742.2,Average earnings in £s,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Average Earnings,,2021,684,Average earnings in £s,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Average Earnings,,2021,722.2,Average earnings in £s,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Average Earnings,,2021,545.3,Average earnings in £s,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Average Earnings,,2021,563,Average earnings in £s,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Average Earnings,,2021,712.2,Average earnings in £s,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Average Earnings,,2022,628.5,Average earnings in £s,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Average Earnings,,2022,540.2,Average earnings in £s,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Average Earnings,,2022,659.9,Average earnings in £s,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Average Earnings,,2022,628.2,Average earnings in £s,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Average Earnings,,2022,652.1,Average earnings in £s,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Average Earnings,,2022,672.7,Average earnings in £s,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Average Earnings,,2022,656.5,Average earnings in £s,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Average Earnings,,2022,725.2,Average earnings in £s,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Average Earnings,,2022,570.6,Average earnings in £s,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Average Earnings,,2022,529.8,Average earnings in £s,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Average Earnings,,2022,662.2,Average earnings in £s,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Business,VAT units,,2021,1217.067406,Count of VAT registered businesses,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Business,VAT units,,2021,868.4661176,Count of VAT registered businesses,Positive
+Borough and District,E07000209,Guildford,Surrey,Business,VAT units,,2021,889.3946197,Count of VAT registered businesses,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Business,VAT units,,2021,1187.446159,Count of VAT registered businesses,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Business,VAT units,,2021,902.7731961,Count of VAT registered businesses,Positive
+Borough and District,E07000212,Runnymede,Surrey,Business,VAT units,,2021,848.7706872,Count of VAT registered businesses,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Business,VAT units,,2021,879.3439428,Count of VAT registered businesses,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Business,VAT units,,2021,964.7097625,Count of VAT registered businesses,Positive
+Borough and District,E07000215,Tandridge,Surrey,Business,VAT units,,2021,1043.46999,Count of VAT registered businesses,Positive
+Borough and District,E07000216,Waverley,Surrey,Business,VAT units,,2021,1246.216842,Count of VAT registered businesses,Positive
+Borough and District,E07000217,Woking,Surrey,Business,VAT units,,2021,984.1656516,Count of VAT registered businesses,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Business,VAT units,,2022,1200.72105,Count of VAT registered businesses,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Business,VAT units,,2022,870.3096019,Count of VAT registered businesses,Positive
+Borough and District,E07000209,Guildford,Surrey,Business,VAT units,,2022,871.5763109,Count of VAT registered businesses,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Business,VAT units,,2022,1170.953337,Count of VAT registered businesses,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Business,VAT units,,2022,887.5414662,Count of VAT registered businesses,Positive
+Borough and District,E07000212,Runnymede,Surrey,Business,VAT units,,2022,850.0185704,Count of VAT registered businesses,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Business,VAT units,,2022,871.4579189,Count of VAT registered businesses,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Business,VAT units,,2022,960.7244083,Count of VAT registered businesses,Positive
+Borough and District,E07000215,Tandridge,Surrey,Business,VAT units,,2022,1045.744218,Count of VAT registered businesses,Positive
+Borough and District,E07000216,Waverley,Surrey,Business,VAT units,,2022,1246.253028,Count of VAT registered businesses,Positive
+Borough and District,E07000217,Woking,Surrey,Business,VAT units,,2022,1017.907944,Count of VAT registered businesses,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Business,GVA,,2021,34830,GVA per head in £s,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Business,GVA,,2021,24994,GVA per head in £s,Positive
+Borough and District,E07000209,Guildford,Surrey,Business,GVA,,2021,37193,GVA per head in £s,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Business,GVA,,2021,40624,GVA per head in £s,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Business,GVA,,2021,29538,GVA per head in £s,Positive
+Borough and District,E07000212,Runnymede,Surrey,Business,GVA,,2021,49208,GVA per head in £s,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Business,GVA,,2021,27936,GVA per head in £s,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Business,GVA,,2021,36928,GVA per head in £s,Positive
+Borough and District,E07000215,Tandridge,Surrey,Business,GVA,,2021,25675,GVA per head in £s,Positive
+Borough and District,E07000216,Waverley,Surrey,Business,GVA,,2021,30774,GVA per head in £s,Positive
+Borough and District,E07000217,Woking,Surrey,Business,GVA,,2021,32564,GVA per head in £s,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Business,GVA,,2022,45358.76816,GVA per head in £s,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Business,GVA,,2022,22188.29482,GVA per head in £s,Positive
+Borough and District,E07000209,Guildford,Surrey,Business,GVA,,2022,35460.56781,GVA per head in £s,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Business,GVA,,2022,48652.39299,GVA per head in £s,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Business,GVA,,2022,42361.91432,GVA per head in £s,Positive
+Borough and District,E07000212,Runnymede,Surrey,Business,GVA,,2022,70671.22022,GVA per head in £s,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Business,GVA,,2022,34744.78736,GVA per head in £s,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Business,GVA,,2022,40274.24446,GVA per head in £s,Positive
+Borough and District,E07000215,Tandridge,Surrey,Business,GVA,,2022,21768.9183,GVA per head in £s,Positive
+Borough and District,E07000216,Waverley,Surrey,Business,GVA,,2022,26059.38602,GVA per head in £s,Positive
+Borough and District,E07000217,Woking,Surrey,Business,GVA,,2022,33526.90549,GVA per head in £s,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification,,2021,43.85224018,Percentage with degree or higher,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification,,2021,35.97753888,Percentage with degree or higher,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification,,2021,39.52073471,Percentage with degree or higher,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification,,2021,37.93618856,Percentage with degree or higher,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification,,2021,33.95981034,Percentage with degree or higher,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification,,2021,29.92363435,Percentage with degree or higher,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification,,2021,25.94731652,Percentage with degree or higher,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification,,2021,34.46798072,Percentage with degree or higher,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification,,2021,32.96823167,Percentage with degree or higher,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification,,2021,40.13726174,Percentage with degree or higher,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification,,2021,38.35827493,Percentage with degree or higher,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification,,2022,43.85224018,Percentage with degree or higher,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification,,2022,35.97753888,Percentage with degree or higher,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification,,2022,39.52073471,Percentage with degree or higher,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification,,2022,37.93618856,Percentage with degree or higher,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification,,2022,33.95981034,Percentage with degree or higher,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification,,2022,29.92363435,Percentage with degree or higher,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification,,2022,25.94731652,Percentage with degree or higher,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification,,2022,34.46798072,Percentage with degree or higher,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification,,2022,32.96823167,Percentage with degree or higher,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification,,2022,40.13726174,Percentage with degree or higher,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification,,2022,38.35827493,Percentage with degree or higher,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,No Qualification,,2021,13.23042571,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,No Qualification,,2021,15.83376124,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,No Qualification,,2021,14.20476245,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,No Qualification,,2021,15.96866916,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,No Qualification,,2021,16.58433055,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,No Qualification,,2021,18.26774489,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,No Qualification,,2021,20.42157026,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,No Qualification,,2021,14.98802343,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,No Qualification,,2021,17.13487343,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,No Qualification,,2021,15.17265434,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000217,Woking,Surrey,Education and Skills,No Qualification,,2021,15.20742565,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,No Qualification,,2022,13.23042571,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,No Qualification,,2022,15.83376124,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,No Qualification,,2022,14.20476245,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,No Qualification,,2022,15.96866916,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,No Qualification,,2022,16.58433055,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,No Qualification,,2022,18.26774489,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,No Qualification,,2022,20.42157026,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,No Qualification,,2022,14.98802343,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,No Qualification,,2022,17.13487343,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,No Qualification,,2022,15.17265434,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000217,Woking,Surrey,Education and Skills,No Qualification,,2022,15.20742565,Percentage with no qualifications degree or higher,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,10.80497178,Percentage with no qualifications,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,12.76332286,Percentage with no qualifications,Negative
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,11.3441189,Percentage with no qualifications,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,12.304566,Percentage with no qualifications,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,13.12339235,Percentage with no qualifications,Negative
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,14.47804502,Percentage with no qualifications,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,16.80861784,Percentage with no qualifications,Negative
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,13.0692291,Percentage with no qualifications,Negative
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,13.81837178,Percentage with no qualifications,Negative
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,11.44315572,Percentage with no qualifications,Negative
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),People with no qualifications,2021,13.2476109,Percentage with no qualifications,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,6.479489584,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,7.903168387,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,7.243814774,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,8.620522816,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,9.154325766,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,8.997895953,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,11.07339075,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,9.590155047,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,9.406150284,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,7.266920123,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 1 qualifications,2021,8.439281281,Percentage with Level 1 qualifications,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,11.4383952,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,12.65652329,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,11.33406503,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,13.62612146,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,14.19057846,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,12.55552347,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,14.42863655,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,14.30798005,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,15.14556801,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,13.16556343,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 2 qualifications,2021,12.44140225,Percentage with Level 2 qualifications,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,13.61630537,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,15.64845915,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,19.73407509,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,15.4577752,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,16.34243189,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,21.32788756,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,15.86694177,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,16.77463949,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,17.31991077,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,15.27008511,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 3 qualifications,2021,14.62744484,Percentage with Level 3 qualifications,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,52.10528251,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,44.33265745,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,44.08622871,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,43.14961501,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,40.23841038,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,35.26410605,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,33.58364723,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,39.2076873,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,37.4382289,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,46.59860663,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Level 4 qualifications,2021,44.72349092,Percentage with Level 4 qualifications,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.3240848,Percentage with other qualifications,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.628198183,Percentage with other qualifications,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.331660481,Percentage with other qualifications,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.405341517,Percentage with other qualifications,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.585553863,Percentage with other qualifications,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.7008815,Percentage with other qualifications,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,3.000167942,Percentage with other qualifications,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.542556652,Percentage with other qualifications,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.497670347,Percentage with other qualifications,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.320666963,Percentage with other qualifications,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Other qualifications,2021,2.653619503,Percentage with other qualifications,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,3.231470756,Percentage with apprenticeships,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.067670686,Percentage with apprenticeships,Positive
+Borough and District,E07000209,Guildford,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,3.926037015,Percentage with apprenticeships,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.436058005,Percentage with apprenticeships,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.365307295,Percentage with apprenticeships,Positive
+Borough and District,E07000212,Runnymede,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.675660437,Percentage with apprenticeships,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,5.238597922,Percentage with apprenticeships,Positive
+Borough and District,E07000214,Surrey Heath,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.507752358,Percentage with apprenticeships,Positive
+Borough and District,E07000215,Tandridge,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,4.374099907,Percentage with apprenticeships,Positive
+Borough and District,E07000216,Waverley,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,3.935002026,Percentage with apprenticeships,Positive
+Borough and District,E07000217,Woking,Surrey,Education and Skills,Highest Qualification (Census 2021),Apprenticeships,2021,3.867150312,Percentage with apprenticeships,Positive
