@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from datetime import datetime
 
 # 1. Page Configuration
-st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
+#st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
 
 # --- CUSTOM HEADER BANNER ---
 st.markdown("""
@@ -31,7 +31,7 @@ with col1:
         st.warning("Logo missing. Please upload surrey_logo.png")
 
 with col2:
-    st.markdown('<p class="title-text">Understanding Surrey\'s Places</p>', unsafe_allow_html=True)
+    st.markdown('<p class="title-text">Surrey Data Explorer</p>', unsafe_allow_html=True)
 
 st.divider()
 
