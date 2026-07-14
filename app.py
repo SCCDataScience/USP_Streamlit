@@ -26,30 +26,49 @@ def apply_pca_weights(df_pivot):
     except: return np.array([1/df_pivot.shape[1]] * df_pivot.shape[1])
 
 # --- DATA LOADING ---
+import os
+
 @st.cache_data
 def load_raw_data(file_path):
     df = pd.read_csv(file_path)
-    if 'Source' not in df.columns: df['Source'] = "ONS / Nomis"
+    
+    # FIX 1: Delete any "Ghost Rows" (completely blank rows) left by Excel
+    df = df.dropna(how='all')
+    
+    # Ensure all Indicator Names are treated as text (prevents sorting crashes)
+    df['Indicator_Name'] = df['Indicator_Name'].astype(str)
+    
+    if 'Source' not in df.columns: 
+        df['Source'] = "ONS / Nomis"
     return df
 
 @st.cache_data
 def load_mock_services():
-    # Mock data for Surrey local services (Pins)
     return pd.DataFrame({
-        "Service_Name": ["Ashford Hospital", "Royal Surrey County", "Woking High School", "Guildford Library", "Elmbridge Leisure", "Epsom General Hospital"],
+        "Service_Name": ["Ashford Hospital", "Royal Surrey", "Woking High", "Guildford Library", "Elmbridge Leisure", "Epsom General"],
         "Type": ["Health", "Health", "Education", "Public Service", "Public Service", "Health"],
         "Lat": [51.426, 51.240, 51.325, 51.236, 51.370, 51.326],
         "Lon": [-0.473, -0.602, -0.560, -0.575, -0.410, -0.270]
     })
 
-try: df_raw = load_raw_data('USP_test.csv')
-except FileNotFoundError: st.error("⚠️ CSV file not found."); st.stop()
+try: 
+    df_raw = load_raw_data('USP_test.csv')
+except FileNotFoundError: 
+    st.error("⚠️ 'USP_test.csv' not found."); st.stop()
 
 df_services = load_mock_services()
 
-try:
-    with open('boundaries.geojson') as f: geo = json.load(f)
-except: geo = None
+# FIX 2: Loud Map Diagnostics
+geo = None
+if os.path.exists('boundaries.geojson'):
+    with open('boundaries.geojson') as f: 
+        geo = json.load(f)
+elif os.path.exists('boundaries.json'):
+    st.warning("⚠️ Map Warning: Found 'boundaries.json'. Please rename the file to end in '.geojson' on GitHub.")
+    with open('boundaries.json') as f: 
+        geo = json.load(f)
+else:
+    st.error("⚠️ Map Error: Could not find the boundaries file. Please ensure it is uploaded to the main folder of your GitHub repository.")
 
 # --- GLOBAL SIDEBAR CONFIGURATION ---
 st.sidebar.title("🧭 Navigation")
