@@ -77,7 +77,7 @@ else:
     st.error("⚠️ Map Error: Could not find the boundaries file. Please ensure it is uploaded to the main folder of your GitHub repository.")
 
 # --- GLOBAL SIDEBAR CONFIGURATION ---
-st.sidebar.title("🧭 Navigation")
+st.sidebar.title("Navigation")
 app_mode = st.sidebar.radio("What do you want to build?", [
     "1. Explore A Single Indicator", 
     "2. View An Existing Index", 
@@ -88,7 +88,7 @@ app_mode = st.sidebar.radio("What do you want to build?", [
 ])
 
 st.sidebar.divider()
-st.sidebar.subheader("🌍 Geography & Scope")
+st.sidebar.subheader("Geography & Scope")
 all_areas = sorted(df_raw['Area_Name'].unique())
 selected_areas = st.sidebar.multiselect("Select Areas to Display", all_areas, default=all_areas)
 calc_scope = st.sidebar.radio("Normalisation Scope", ["Regional (All Surrey)", "Local (Selected only)"])
@@ -96,10 +96,10 @@ calc_scope = st.sidebar.radio("Normalisation Scope", ["Regional (All Surrey)", "
 df_calc = df_raw[df_raw['Area_Name'].isin(selected_areas)].copy() if calc_scope == "Local (Selected only)" else df_raw.copy()
 
 # --- MAIN INTERFACE (TABS) ---
-tab_dashboard, tab_metadata, tab_feedback = st.tabs(["📊 Dashboard", "📖 Data Sources & Help", "💬 Feedback"])
+tab_dashboard, tab_metadata, tab_feedback = st.tabs(["Dashboard", "Data Sources & Help", "Feedback"])
 
 with tab_dashboard:
-    st.title("🏙️ Understanding Surrey's Places")
+    st.title("Understanding Surrey's Places")
     
    # ==========================================
     # MODE 1: SINGLE INDICATOR (Sub-Category Fix)
@@ -261,7 +261,7 @@ with tab_dashboard:
                 fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
                 st.plotly_chart(fig_biv, use_container_width=True)
                 
-            st.info("🎨 **How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Ind 1, Low Ind 2. Bright Blue (`1-3`) = Low Ind 1, High Ind 2.")
+            st.info("**How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Ind 1, Low Ind 2. Bright Blue (`1-3`) = Low Ind 1, High Ind 2.")
         except Exception as e:
             st.warning("Not enough variance in the selected data to create a 3x3 statistical grid. Try different indicators.")
 
