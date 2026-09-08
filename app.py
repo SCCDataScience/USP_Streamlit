@@ -342,7 +342,7 @@ with tab_dashboard:
     # ==========================================
     # MODE 7: STATISTICAL ANALYSIS & INSIGHTS
     # ==========================================
-    elif app_mode == "7. Statistical Analysis & Insights":
+    elif app_mode == "7. Statistical Analysis":
         st.subheader("Statistical Analysis & Regression")
         st.write("Test the mathematical relationship between two indicators using linear regression.")
         
