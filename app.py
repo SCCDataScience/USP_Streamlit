@@ -103,7 +103,7 @@ else:
 
 # --- GLOBAL SIDEBAR CONFIGURATION ---
 st.sidebar.title("Navigation")
-app_mode = st.sidebar.radio("What do you want to build?", [
+app_mode = st.sidebar.radio("What do you want to do?", [
     "1. Explore A Single Indicator", 
     "2. View An Existing Index", 
     "3. Build A Bespoke Index", 
@@ -162,8 +162,8 @@ with tab_dashboard:
         col1, col2 = st.columns([2, 1])
         with col1:
             if geo:
-                fig_map = px.choropleth_mapbox(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="viridis", mapbox_style="open-street-map",
+                fig_map = px.choropleth_map(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                    color="Value", color_continuous_scale="viridis", map_style="open-street-map",
                     zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
                 fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_map, use_container_width=True)
@@ -175,7 +175,7 @@ with tab_dashboard:
     # ==========================================
     elif app_mode == "2. View An Existing Index":
         st.subheader("Existing Strategic Indices")
-        existing_index = st.selectbox("Select Existing Index", ["Surrey Index (Mock)", "Health and Wellbeing Strategy Index (Mock)"])
+        existing_index = st.selectbox("Select Existing Index", ["Surrey Index (Mock)", "Health and Wellbeing Strategy Index (Mock)", "Community Harm Index (Mock)"])
         st.write(f"Currently viewing the architecture for the **{existing_index}**.")
 
     # ==========================================
@@ -205,8 +205,8 @@ with tab_dashboard:
             col1, col2 = st.columns([2, 1])
             with col1:
                 if geo:
-                    fig_map = px.choropleth_mapbox(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                        color="Final_Value", color_continuous_scale="viridis", mapbox_style="open-street-map",
+                    fig_map = px.choropleth_map(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                        color="Final_Value", color_continuous_scale="viridis", map_style="open-street-map",
                         zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
                     fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                     st.plotly_chart(fig_map, use_container_width=True)
@@ -238,8 +238,8 @@ with tab_dashboard:
         with col1:
             st.markdown(f"**{ind_a}** ({latest_year_a})")
             if geo:
-                fig_a = px.choropleth_mapbox(df_a[df_a['Year'] == latest_year_a], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="Blues", mapbox_style="open-street-map",
+                fig_a = px.choropleth_map(df_a[df_a['Year'] == latest_year_a], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                    color="Value", color_continuous_scale="Blues", map_style="open-street-map",
                     zoom=8.5, center={"lat": 51.3, "lon": -0.4}, opacity=0.7)
                 fig_a.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_a, use_container_width=True)
@@ -247,8 +247,8 @@ with tab_dashboard:
         with col2:
             st.markdown(f"**{ind_b}** ({latest_year_b})")
             if geo:
-                fig_b = px.choropleth_mapbox(df_b[df_b['Year'] == latest_year_b], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="Reds", mapbox_style="open-street-map",
+                fig_b = px.choropleth_map(df_b[df_b['Year'] == latest_year_b], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                    color="Value", color_continuous_scale="Reds", map_style="open-street-map",
                     zoom=8.5, center={"lat": 51.3, "lon": -0.4}, opacity=0.7)
                 fig_b.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_b, use_container_width=True)
@@ -280,8 +280,8 @@ with tab_dashboard:
             biv_colors = {"3-3": "#3F2949", "2-3": "#435786", "1-3": "#4885C1", "3-2": "#77324C", "2-2": "#806A8A", "1-2": "#89A1C8", "3-1": "#AE3A4E", "2-1": "#BC7C8F", "1-1": "#CABED0"}
             
             if geo:
-                fig_biv = px.choropleth_mapbox(biv_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Biv_Class", color_discrete_map=biv_colors, mapbox_style="open-street-map",
+                fig_biv = px.choropleth_map(biv_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
+                    color="Biv_Class", color_discrete_map=biv_colors, map_style="open-street-map",
                     zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
                 fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
                 st.plotly_chart(fig_biv, use_container_width=True)
@@ -309,7 +309,7 @@ with tab_dashboard:
             fig = go.Figure()
             
             # Layer 1: The Borough Polygons
-            fig.add_trace(go.Choroplethmapbox(
+            fig.add_trace(go.Choroplethmap(
                 geojson=geo, locations=map_df_base['Area_Name'], featureidkey="properties.LAD23NM",
                 z=map_df_base['Value'], colorscale="Blues", marker_opacity=0.5,
                 name="Heatmap", hoverinfo="location+z"
@@ -319,13 +319,13 @@ with tab_dashboard:
             color_map = {"Health": "red", "Education": "green", "Public Service": "orange"}
             for s_type in selected_types:
                 type_data = filtered_services[filtered_services['Type'] == s_type]
-                fig.add_trace(go.Scattermapbox(
+                fig.add_trace(go.Scattermap(
                     lat=type_data['Lat'], lon=type_data['Lon'], mode='markers',
-                    marker=go.scattermapbox.Marker(size=12, color=color_map.get(s_type, "blue")),
+                    marker=go.scattermap.Marker(size=12, color=color_map.get(s_type, "blue")),
                     text=type_data['Service_Name'], hoverinfo='text', name=s_type
                 ))
 
-            fig.update_layout(mapbox_style="open-street-map", mapbox_zoom=9, mapbox_center={"lat": 51.3, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
+            fig.update_layout(map_style="open-street-map", map_zoom=9, map_center={"lat": 51.3, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
             st.plotly_chart(fig, use_container_width=True)
 
 with tab_metadata:
