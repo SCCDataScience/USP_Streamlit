@@ -338,6 +338,51 @@ with tab_dashboard:
             fig.update_layout(map_style="open-street-map", map_zoom=9, map_center={"lat": 51.3, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
             st.plotly_chart(fig, use_container_width=True)
 
+    # ==========================================
+    # MODE 7: STATISTICAL ANALYSIS & INSIGHTS
+    # ==========================================
+    elif app_mode == "7. Statistical Analysis & Insights":
+        st.subheader("Statistical Analysis & Regression")
+        st.write("Test the mathematical relationship between two indicators using linear regression.")
+        
+        col1, col2 = st.columns(2)
+        with col1: ind_x = st.selectbox("Independent Variable (X-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=0)
+        with col2: ind_y = st.selectbox("Dependent Variable (Y-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=1)
+        
+        # Get the latest data for the selected indicators
+        df_x = df_calc[df_calc['Indicator_Name'] == ind_x].sort_values('Year').groupby('Area_Name').last().reset_index()
+        df_y = df_calc[df_calc['Indicator_Name'] == ind_y].sort_values('Year').groupby('Area_Name').last().reset_index()
+        
+        stat_df = pd.merge(df_x[['Area_Name', 'Value']], df_y[['Area_Name', 'Value']], on='Area_Name', suffixes=('_X', '_Y'))
+        
+        # Plotly scatter plot with built-in Ordinary Least Squares (OLS) trendline
+        try:
+            fig_scatter = px.scatter(
+                stat_df, x="Value_X", y="Value_Y", text="Area_Name", 
+                trendline="ols", trendline_color_override="#AE3A4E",
+                labels={"Value_X": ind_x, "Value_Y": ind_y}
+            )
+            fig_scatter.update_traces(textposition='top center', marker=dict(size=10, color="#435786"))
+            fig_scatter.update_layout(height=600)
+            st.plotly_chart(fig_scatter, use_container_width=True)
+            
+            # Extract the R-squared value from the background math model
+            model = px.get_trendline_results(fig_scatter)
+            r_squared = model.iloc[0]["px_fit_results"].rsquared
+            
+            # Display plain-english statistical insights
+            st.success(f"**Statistical Relationship (R² Score): {r_squared:.2f}**")
+            
+            if r_squared > 0.7:
+                st.write("📊 **Insight:** There is a **very strong relationship** between these two variables. As one changes, the other changes in a highly predictable way.")
+            elif r_squared > 0.4:
+                st.write("📊 **Insight:** There is a **moderate relationship**. The variables are linked, but other local factors are also influencing the outcome.")
+            else:
+                st.write("📊 **Insight:** There is a **weak or no relationship**. These two indicators do not strongly affect one another in this geography.")
+                
+        except Exception as e:
+            st.error("⚠️ Please ensure 'statsmodels' is added to your requirements.txt file to calculate the regression line.")
+
 with tab_metadata:
     st.write("Methodology and definitions live here.")
     
