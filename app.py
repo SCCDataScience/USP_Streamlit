@@ -109,7 +109,7 @@ app_mode = st.sidebar.radio("What do you want to do?", [
     "3. Build A Bespoke Index", 
     "4. Compare Side-by-Side",
     "5. Spatial Correlation (Bivariate Map)",
-    "6. Local Services Mapper (Pins)"
+    "6. Local Services Mapper (Pins)",
     "7. Statistical Analysis"
 ])
 
