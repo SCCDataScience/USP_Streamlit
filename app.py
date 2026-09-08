@@ -101,6 +101,27 @@ elif os.path.exists('boundaries.json'):
 else:
     st.error("⚠️ Map Error: Could not find the boundaries file. Please ensure it is uploaded to the main folder of your GitHub repository.")
 
+# --- GLOBAL INDICATOR FORMATTING ---
+# Build a lookup mapping indicators to their themes
+theme_lookup = (
+    df_raw[['Indicator_Name', 'Theme']]
+    .drop_duplicates()
+    .set_index('Indicator_Name')['Theme']
+    .to_dict()
+)
+
+# Sort indicators primarily by Theme, secondarily by Indicator Name
+sorted_indicators = (
+    df_raw[['Theme', 'Indicator_Name']]
+    .drop_duplicates()
+    .sort_values(by=['Theme', 'Indicator_Name'])['Indicator_Name']
+    .tolist()
+)
+
+# Formatting function to display [Theme] Indicator
+def format_ind(ind_name):
+    return f"[{theme_lookup.get(ind_name, 'General')}] {ind_name}"
+
 # --- GLOBAL SIDEBAR CONFIGURATION ---
 st.sidebar.title("Navigation")
 app_mode = st.sidebar.radio("What do you want to do?", [
@@ -132,17 +153,11 @@ with tab_dashboard:
     # ==========================================
     if app_mode == "1. Explore A Single Indicator":
         st.subheader("Explore A Single Indicator")
-        
-        # Cascading selection
-        available_themes = ["All Themes"] + sorted(df_raw['Theme'].dropna().unique().tolist())
-        selected_theme = st.sidebar.selectbox("Filter by Theme", available_themes)
-
-        if selected_theme != "All Themes":
-            filtered_indicators = sorted(df_raw[df_raw['Theme'] == selected_theme]['Indicator_Name'].unique())
-        else:
-            filtered_indicators = sorted(df_raw['Indicator_Name'].unique())
-
-        selected_ind = st.sidebar.selectbox("Select Indicator", filtered_indicators)
+        selected_ind = st.sidebar.selectbox(
+            "Select Indicator", 
+            options=sorted_indicators, 
+            format_func=format_ind
+        )
         
         display_data = df_calc[df_calc['Indicator_Name'] == selected_ind]
         display_data = display_data[display_data['Area_Name'].isin(selected_areas)]
@@ -194,8 +209,13 @@ with tab_dashboard:
     # ==========================================
     elif app_mode == "3. Build A Bespoke Index":
         st.subheader("Bespoke Index Builder")
-        with st.sidebar.expander("Index Components", expanded=True):
-            selected_inds = st.multiselect("Select Indicators", sorted(df_raw['Indicator_Name'].unique()), default=sorted(df_raw['Indicator_Name'].unique())[:4])
+        with st.sidebar.expander("📊 Index Components", expanded=True):
+            selected_inds = st.multiselect(
+                "Select Indicators", 
+                options=sorted_indicators, 
+                default=sorted_indicators[:4],
+                format_func=format_ind
+            )
         weight_method = st.sidebar.selectbox("Weighting Logic", ["Equal Weighting", "Statistical (PCA)"])
 
         normalized_list = []
@@ -236,8 +256,18 @@ with tab_dashboard:
     elif app_mode == "4. Compare Side-by-Side":
         st.subheader("Indicator Correlation & Spatial Comparison")
         
-        ind_a = st.sidebar.selectbox("Indicator A (Left Map)", sorted(df_raw['Indicator_Name'].unique()), index=0)
-        ind_b = st.sidebar.selectbox("Indicator B (Right Map)", sorted(df_raw['Indicator_Name'].unique()), index=1 if len(df_raw['Indicator_Name'].unique()) > 1 else 0)
+        ind_a = st.sidebar.selectbox(
+            "Indicator A (Left Map)", 
+            options=sorted_indicators, 
+            index=0, 
+            format_func=format_ind
+        )
+        ind_b = st.sidebar.selectbox(
+            "Indicator B (Right Map)", 
+            options=sorted_indicators, 
+            index=1 if len(sorted_indicators) > 1 else 0, 
+            format_func=format_ind
+        )
 
         df_a = df_calc[(df_calc['Indicator_Name'] == ind_a) & (df_calc['Area_Name'].isin(selected_areas))]
         df_b = df_calc[(df_calc['Indicator_Name'] == ind_b) & (df_calc['Area_Name'].isin(selected_areas))]
@@ -272,8 +302,20 @@ with tab_dashboard:
         st.write("This map blends two indicators to identify complex spatial relationships (e.g., areas with High Health Deprivation AND Low Skills).")
         
         col1, col2 = st.columns(2)
-        with col1: ind_x = st.selectbox("Indicator 1 (X-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=0)
-        with col2: ind_y = st.selectbox("Indicator 2 (Y-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=1)
+        with col1: 
+            ind_x = st.selectbox(
+                "Indicator 1 (X-Axis)", 
+                options=sorted_indicators, 
+                index=0, 
+                format_func=format_ind
+            )
+        with col2: 
+            ind_y = st.selectbox(
+            "Indicator 2 (Y-Axis)", 
+            options=sorted_indicators, 
+            index=1, 
+            format_func=format_ind
+            )
 
         # Get latest data
         df_x = df_calc[df_calc['Indicator_Name'] == ind_x].sort_values('Year').groupby('Area_Name').last().reset_index()
@@ -308,7 +350,10 @@ with tab_dashboard:
         st.subheader("Asset & Services Mapper")
         st.write("Overlay local infrastructure (Schools, GP Surgeries, Libraries) on top of deprivation or economic data.")
         
-        base_ind = st.selectbox("Select Background Heatmap Layer", sorted(df_raw['Indicator_Name'].unique()))
+        base_ind = st.selectbox("Select Background Heatmap Layer", 
+            options=sorted_indicators,
+            format_func=format_ind
+        )
         selected_types = st.multiselect("Select Services to Display", df_services['Type'].unique(), default=df_services['Type'].unique())
         
         df_base = df_calc[df_calc['Indicator_Name'] == base_ind]
@@ -347,8 +392,20 @@ with tab_dashboard:
         st.write("Test the relationship between two indicators using linear regression.")
         
         col1, col2 = st.columns(2)
-        with col1: ind_x = st.selectbox("Independent Variable (X-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=0)
-        with col2: ind_y = st.selectbox("Dependent Variable (Y-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=1)
+        with col1: 
+            ind_x = st.selectbox(
+                "Independent Variable (X-Axis)", 
+                options=sorted_indicators, 
+                index=0, 
+                format_func=format_ind
+            )
+        with col2: 
+            ind_y = st.selectbox(
+                "Dependent Variable (Y-Axis)", 
+                options=sorted_indicators, 
+                index=1, 
+                format_func=format_ind
+            )
         
         # Get the latest data for the selected indicators
         df_x = df_calc[df_calc['Indicator_Name'] == ind_x].sort_values('Year').groupby('Area_Name').last().reset_index()
