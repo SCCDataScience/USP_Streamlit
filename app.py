@@ -131,7 +131,17 @@ with tab_dashboard:
     # ==========================================
     if app_mode == "1. Explore A Single Indicator":
         st.subheader("Explore A Single Indicator")
-        selected_ind = st.sidebar.selectbox("Select Indicator", sorted(df_raw['Indicator_Name'].unique()))
+        
+        # Cascading selection
+        available_themes = ["All Themes"] + sorted(df_raw['Theme'].dropna().unique().tolist())
+        selected_theme = st.sidebar.selectbox("Filter by Theme", available_themes)
+
+        if selected_theme != "All Themes":
+            filtered_indicators = sorted(df_raw[df_raw['Theme'] == selected_theme]['Indicator_Name'].unique())
+        else:
+            filtered_indicators = sorted(df_raw['Indicator_Name'].unique())
+
+        selected_ind = st.sidebar.selectbox("Select Indicator", filtered_indicators)
         
         display_data = df_calc[df_calc['Indicator_Name'] == selected_ind]
         display_data = display_data[display_data['Area_Name'].isin(selected_areas)]
