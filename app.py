@@ -343,8 +343,8 @@ with tab_dashboard:
     # MODE 7: STATISTICAL ANALYSIS & INSIGHTS
     # ==========================================
     elif app_mode == "7. Statistical Analysis":
-        st.subheader("Statistical Analysis & Regression")
-        st.write("Test the mathematical relationship between two indicators using linear regression.")
+        st.subheader("Statistical Analysis and Regression")
+        st.write("Test the relationship between two indicators using linear regression.")
         
         col1, col2 = st.columns(2)
         with col1: ind_x = st.selectbox("Independent Variable (X-Axis)", sorted(df_raw['Indicator_Name'].unique()), index=0)
