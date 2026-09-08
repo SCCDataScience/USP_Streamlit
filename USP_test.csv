@@ -1308,3 +1308,344 @@ Borough and District,E07000217,Woking,Surrey,Employment,Employment by Sector,15 
 Borough and District,E07000217,Woking,Surrey,Employment,Employment by Sector,16 : Education (P),2024,8.3,Percentage of total employment,Positive
 Borough and District,E07000217,Woking,Surrey,Employment,Employment by Sector,17 : Health (Q),2024,10.4,Percentage of total employment,Positive
 Borough and District,E07000217,Woking,Surrey,Employment,Employment by Sector,"18 : Arts, entertainment, recreation & other services (R,S,T and U)",2024,8.3,Percentage of total employment,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Children,Pupils eligible to receive free school meals,,2024,7.773396433,Percentage of school pupils,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Children,Pupils eligible to receive free school meals,,2024,9.158189487,Percentage of school pupils,Negative
+Borough and District,E07000209,Guildford,Surrey,Children,Pupils eligible to receive free school meals,,2024,13.14312248,Percentage of school pupils,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Children,Pupils eligible to receive free school meals,,2024,14.07612638,Percentage of school pupils,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Children,Pupils eligible to receive free school meals,,2024,14.99962632,Percentage of school pupils,Negative
+Borough and District,E07000212,Runnymede,Surrey,Children,Pupils eligible to receive free school meals,,2024,16.01874518,Percentage of school pupils,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Children,Pupils eligible to receive free school meals,,2024,20.15678911,Percentage of school pupils,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Children,Pupils eligible to receive free school meals,,2024,12.06959565,Percentage of school pupils,Negative
+Borough and District,E07000215,Tandridge,Surrey,Children,Pupils eligible to receive free school meals,,2024,10.96128169,Percentage of school pupils,Negative
+Borough and District,E07000216,Waverley,Surrey,Children,Pupils eligible to receive free school meals,,2024,9.991716994,Percentage of school pupils,Negative
+Borough and District,E07000217,Woking,Surrey,Children,Pupils eligible to receive free school meals,,2024,15.3268527,Percentage of school pupils,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Community Safety,Anti-social behaviour ,,2026,8.695158094,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Community Safety,Anti-social behaviour ,,2026,13.53515575,,Negative
+Borough and District,E07000209,Guildford,Surrey,Community Safety,Anti-social behaviour ,,2026,12.90039995,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Community Safety,Anti-social behaviour ,,2026,12.58453178,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Community Safety,Anti-social behaviour ,,2026,10.23390246,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Community Safety,Anti-social behaviour ,,2026,12.4265592,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Community Safety,Anti-social behaviour ,,2026,13.75684424,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Community Safety,Anti-social behaviour ,,2026,10.5842202,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Community Safety,Anti-social behaviour ,,2026,13.81324149,,Negative
+Borough and District,E07000216,Waverley,Surrey,Community Safety,Anti-social behaviour ,,2026,6.799201616,,Negative
+Borough and District,E07000217,Woking,Surrey,Community Safety,Anti-social behaviour ,,2026,11.99357496,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Bicycle theft offences ,,2026,0.711472512,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Bicycle theft offences ,,2026,0.901557061,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Bicycle theft offences ,,2026,0.838865212,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Bicycle theft offences ,,2026,0.383239075,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Bicycle theft offences ,,2026,0.257439206,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Bicycle theft offences ,,2026,0.531598204,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Bicycle theft offences ,,2026,0.448048826,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Bicycle theft offences ,,2026,0.328428081,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Bicycle theft offences ,,2026,0.110336596,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Bicycle theft offences ,,2026,0.1636151,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Bicycle theft offences ,,2026,0.888799939,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Burglary,,2026,5.845301028,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Burglary,,2026,9.136400711,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Burglary,,2026,5.880189246,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Burglary,,2026,8.317471939,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Burglary,,2026,6.452187471,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Burglary,,2026,7.226850263,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Burglary,,2026,7.676489633,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Burglary,,2026,4.054282066,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Burglary,,2026,6.117383758,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Burglary,,2026,5.146903516,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Burglary,,2026,5.138325866,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Criminal damage ,,2026,4.501164097,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Criminal damage ,,2026,6.123014677,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Criminal damage ,,2026,6.637020282,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Criminal damage ,,2026,4.86801429,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Criminal damage ,,2026,5.562620115,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Criminal damage ,,2026,5.699579644,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Criminal damage ,,2026,6.813375939,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Criminal damage ,,2026,4.564476723,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Criminal damage ,,2026,6.179529442,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Criminal damage ,,2026,3.068187991,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Criminal damage ,,2026,5.382386754,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Community ,Density of Community owned assets,,2023,271.3671998,,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Community ,Density of Community owned assets,,2023,194.5811232,,Positive
+Borough and District,E07000209,Guildford,Surrey,Community ,Density of Community owned assets,,2023,777.8551147,,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Community ,Density of Community owned assets,,2023,748.4970602,,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Community ,Density of Community owned assets,,2023,409.6121987,,Positive
+Borough and District,E07000212,Runnymede,Surrey,Community ,Density of Community owned assets,,2023,105.8238339,,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Community ,Density of Community owned assets,,2023,93.36128112,,Positive
+Borough and District,E07000214,Surrey Heath LA,Surrey,Community ,Density of Community owned assets,,2023,198.0629974,,Positive
+Borough and District,E07000215,Tandridge,Surrey,Community ,Density of Community owned assets,,2023,1217.042414,,Positive
+Borough and District,E07000216,Waverley,Surrey,Community ,Density of Community owned assets,,2023,861.0627087,,Positive
+Borough and District,E07000217,Woking,Surrey,Community ,Density of Community owned assets,,2023,285.0977614,,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Drug crime offences,,2026,2.374004364,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Drug crime offences,,2026,3.436294971,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Drug crime offences,,2026,2.404170979,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Drug crime offences,,2026,1.927642945,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Drug crime offences,,2026,2.744849336,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Drug crime offences,,2026,3.752276031,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Drug crime offences,,2026,3.239748149,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Drug crime offences,,2026,1.482822498,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Drug crime offences,,2026,1.986049668,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Drug crime offences,,2026,0.915880842,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Drug crime offences,,2026,1.787139858,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Health,Female life expectancy at birth,,2024,86,,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Health,Female life expectancy at birth,,2024,85.7,,Positive
+Borough and District,E07000209,Guildford,Surrey,Health,Female life expectancy at birth,,2024,85.4,,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Health,Female life expectancy at birth,,2024,85.6,,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Health,Female life expectancy at birth,,2024,85,,Positive
+Borough and District,E07000212,Runnymede,Surrey,Health,Female life expectancy at birth,,2024,83.9,,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Health,Female life expectancy at birth,,2024,84.9,,Positive
+Borough and District,E07000214,Surrey Heath LA,Surrey,Health,Female life expectancy at birth,,2024,85.1,,Positive
+Borough and District,E07000215,Tandridge,Surrey,Health,Female life expectancy at birth,,2024,85.2,,Positive
+Borough and District,E07000216,Waverley,Surrey,Health,Female life expectancy at birth,,2024,85.9,,Positive
+Borough and District,E07000217,Woking,Surrey,Health,Female life expectancy at birth,,2024,85.3,,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Health,Male life expectancy at birth,,2024,82.4,,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Health,Male life expectancy at birth,,2024,81.4,,Positive
+Borough and District,E07000209,Guildford,Surrey,Health,Male life expectancy at birth,,2024,81.6,,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Health,Male life expectancy at birth,,2024,82.3,,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Health,Male life expectancy at birth,,2024,81.5,,Positive
+Borough and District,E07000212,Runnymede,Surrey,Health,Male life expectancy at birth,,2024,80.6,,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Health,Male life expectancy at birth,,2024,80.9,,Positive
+Borough and District,E07000214,Surrey Heath LA,Surrey,Health,Male life expectancy at birth,,2024,82.5,,Positive
+Borough and District,E07000215,Tandridge,Surrey,Health,Male life expectancy at birth,,2024,82.3,,Positive
+Borough and District,E07000216,Waverley,Surrey,Health,Male life expectancy at birth,,2024,82.4,,Positive
+Borough and District,E07000217,Woking,Surrey,Health,Male life expectancy at birth,,2024,81.3,,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Other crime offences ,,2026,1.38086265,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Other crime offences ,,2026,1.645115124,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Other crime offences ,,2026,1.889149612,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Other crime offences ,,2026,1.363232288,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Other crime offences ,,2026,2.280507269,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Other crime offences ,,2026,1.954135802,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Other crime offences ,,2026,2.361638882,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Other crime offences ,,2026,2.821768575,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Other crime offences ,,2026,1.324135905,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Other crime offences ,,2026,1.087328084,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Other crime offences ,,2026,1.598799281,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Other theft offences,,2026,4.388896577,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Other theft offences,,2026,5.260029337,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Other theft offences,,2026,5.534079781,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Other theft offences,,2026,4.484361144,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Other theft offences,,2026,4.44991556,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Other theft offences,,2026,6.405139941,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Other theft offences,,2026,5.685158979,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Other theft offences,,2026,5.060637599,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Other theft offences,,2026,5.573233078,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Other theft offences,,2026,3.306942112,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Other theft offences,,2026,5.241180774,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Deprivation,Pensioners in poverty ,,2025,0.068088691,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Deprivation,Pensioners in poverty ,,2025,0.061712846,,Negative
+Borough and District,E07000209,Guildford,Surrey,Deprivation,Pensioners in poverty ,,2025,0.057538769,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Deprivation,Pensioners in poverty ,,2025,0.049979347,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Deprivation,Pensioners in poverty ,,2025,0.060720733,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Deprivation,Pensioners in poverty ,,2025,0.072164948,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Deprivation,Pensioners in poverty ,,2025,0.077095496,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Deprivation,Pensioners in poverty ,,2025,0.053329175,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Deprivation,Pensioners in poverty ,,2025,0.057493807,,Negative
+Borough and District,E07000216,Waverley,Surrey,Deprivation,Pensioners in poverty ,,2025,0.053251649,,Negative
+Borough and District,E07000217,Woking,Surrey,Deprivation,Pensioners in poverty ,,2025,0.07026189,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Possession of weapons offences,,2026,0.683169793,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Possession of weapons offences,,2026,0.516345436,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Possession of weapons offences,,2026,0.561054163,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Possession of weapons offences,,2026,0.484592507,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Possession of weapons offences,,2026,0.710002336,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Possession of weapons offences,,2026,0.921893819,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Possession of weapons offences,,2026,1.102404951,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Possession of weapons offences,,2026,0.423834247,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Possession of weapons offences,,2026,0.485640161,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Possession of weapons offences,,2026,0.387218389,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Possession of weapons offences,,2026,0.898601034,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Community Safety,Public order offences,,2026,5.580845676,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Community Safety,Public order offences,,2026,6.836338953,,Negative
+Borough and District,E07000209,Guildford,Surrey,Community Safety,Public order offences,,2026,7.92961281,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Community Safety,Public order offences,,2026,6.141779792,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Community Safety,Public order offences,,2026,6.402161405,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Community Safety,Public order offences,,2026,7.742634224,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Community Safety,Public order offences,,2026,8.456766547,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Community Safety,Public order offences,,2026,5.412261101,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Community Safety,Public order offences,,2026,6.168118606,,Negative
+Borough and District,E07000216,Waverley,Surrey,Community Safety,Public order offences,,2026,3.969034551,,Negative
+Borough and District,E07000217,Woking,Surrey,Community Safety,Public order offences,,2026,6.753861018,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Robbery recorded offences,,2026,0.585204299,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Robbery recorded offences,,2026,0.793225718,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Robbery recorded offences,,2026,0.653115132,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Robbery recorded offences,,2026,0.439275372,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Robbery recorded offences,,2026,0.433577172,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Robbery recorded offences,,2026,0.684134935,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Robbery recorded offences,,2026,0.90464573,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Robbery recorded offences,,2026,0.285854582,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Robbery recorded offences,,2026,0.364042316,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Robbery recorded offences,,2026,0.275384599,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Robbery recorded offences,,2026,0.671539527,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Shoplifting offences ,,2026,3.812913613,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Shoplifting offences ,,2026,7.70514008,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Shoplifting offences ,,2026,7.743215462,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Shoplifting offences ,,2026,4.697367831,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Shoplifting offences ,,2026,4.020163939,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Shoplifting offences ,,2026,7.047080419,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Shoplifting offences ,,2026,6.660624178,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Shoplifting offences ,,2026,3.970283241,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Shoplifting offences ,,2026,3.506553253,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Shoplifting offences ,,2026,3.329922635,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Shoplifting offences ,,2026,6.281622664,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Theft from the person offences,,2026,0.47202137,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Theft from the person offences,,2026,0.601355802,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Theft from the person offences,,2026,0.481725309,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Theft from the person offences,,2026,0.168777654,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Theft from the person offences,,2026,0.338852421,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Theft from the person offences,,2026,0.304382634,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Theft from the person offences,,2026,0.681021998,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Theft from the person offences,,2026,0.233008059,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Theft from the person offences,,2026,0.275880529,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Theft from the person offences,,2026,0.230756192,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Theft from the person offences,,2026,0.416263665,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Community ,Third Sector organisations,,2025,642.5883911,,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Community ,Third Sector organisations,,2025,608.7311497,,Positive
+Borough and District,E07000209,Guildford,Surrey,Community ,Third Sector organisations,,2025,689.7508572,,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Community ,Third Sector organisations,,2025,1119.390366,,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Community ,Third Sector organisations,,2025,542.9386555,,Positive
+Borough and District,E07000212,Runnymede,Surrey,Community ,Third Sector organisations,,2025,844.5689225,,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Community ,Third Sector organisations,,2025,444.5523657,,Positive
+Borough and District,E07000214,Surrey Heath LA,Surrey,Community ,Third Sector organisations,,2025,670.9562714,,Positive
+Borough and District,E07000215,Tandridge,Surrey,Community ,Third Sector organisations,,2025,845.6052812,,Positive
+Borough and District,E07000216,Waverley,Surrey,Community ,Third Sector organisations,,2025,784.9036371,,Positive
+Borough and District,E07000217,Woking,Surrey,Community ,Third Sector organisations,,2025,545.9930544,,Positive
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Total crime offences,,2026,61.32654356,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Total crime offences,,2026,83.10053038,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Total crime offences,,2026,82.84934006,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Total crime offences,,2026,65.51183504,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Total crime offences,,2026,70.5571407,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Total crime offences,,2026,83.12688031,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Total crime offences,,2026,87.20642567,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Total crime offences,,2026,60.01563764,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Total crime offences,,2026,68.08889392,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Total crime offences,,2026,43.78653448,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Total crime offences,,2026,73.76933437,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,21,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,16,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,24,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,24,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,23,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,29,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,27,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,22,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,28,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,35,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest Further Education Institution by public transport/walk,,2019,25,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,14,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,14,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,16,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,17,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,15,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,13,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,13,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,15,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,15,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,17,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest GP by public transport/walk,,2019,13,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,49,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,27,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,37,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,47,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,33,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,36,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,29,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,32,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,58,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,61,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest Hospital by public transport/walk,,2019,51,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,11,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,10,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,11,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,13,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,11,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,10,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,10,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,11,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,12,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,11,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest Primary School by public transport/walk,,2019,10,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,22,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,16,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,19,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,24,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,20,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,19,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,16,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,20,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,23,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,23,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest Secondary School by public transport/walk,,2019,18,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,8,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,9,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,9,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,11,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,9,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,8,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,9,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,9,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,10,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,10,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 500 jobs),,2019,8,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,16,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,12,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,13,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,21,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,14,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,12,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,12,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,13,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,24,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,22,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest employment centre by public transport/walk (with more than 5000 jobs),,2019,11,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,8,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,8,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,8,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest supermarket by public transport/walk,,2019,7,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,14,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,16,,Negative
+Borough and District,E07000209,Guildford,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,23,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,21,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,17,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,15,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,18,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,23,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,21,,Negative
+Borough and District,E07000216,Waverley,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,20,,Negative
+Borough and District,E07000217,Woking,Surrey,Travel,Travel time to nearest town centre by public transport/walk,,2019,16,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Vehicle crime,,2026,3.988452836,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Vehicle crime,,2026,6.197168221,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Vehicle crime,,2026,3.249566059,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Vehicle crime,,2026,2.817517343,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Vehicle crime,,2026,4.005584549,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Vehicle crime,,2026,3.57019476,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Vehicle crime,,2026,3.912070069,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Vehicle crime,,2026,2.075274583,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Vehicle crime,,2026,4.405697904,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Vehicle crime,,2026,1.638640159,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Vehicle crime,,2026,2.393372907,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Crime,Violent crime and sexual offences,,2026,21.8628727,,Negative
+Borough and District,E07000208,Epsom and Ewell,Surrey,Crime,Violent crime and sexual offences,,2026,26.11398569,,Negative
+Borough and District,E07000209,Guildford,Surrey,Crime,Violent crime and sexual offences,,2026,29.86112905,,Negative
+Borough and District,E07000210,Mole Valley,Surrey,Crime,Violent crime and sexual offences,,2026,21.66930178,,Negative
+Borough and District,E07000211,Reigate and Banstead,Surrey,Crime,Violent crime and sexual offences,,2026,26.69094982,,Negative
+Borough and District,E07000212,Runnymede,Surrey,Crime,Violent crime and sexual offences,,2026,29.35415654,,Negative
+Borough and District,E07000213,Spelthorne,Surrey,Crime,Violent crime and sexual offences,,2026,30.1869383,,Negative
+Borough and District,E07000214,Surrey Heath LA,Surrey,Crime,Violent crime and sexual offences,,2026,21.22780573,,Negative
+Borough and District,E07000215,Tandridge,Surrey,Crime,Violent crime and sexual offences,,2026,21.49077006,,Negative
+Borough and District,E07000216,Waverley,Surrey,Crime,Violent crime and sexual offences,,2026,16.60416934,,Negative
+Borough and District,E07000217,Woking,Surrey,Crime,Violent crime and sexual offences,,2026,27.44744158,,Negative
+Borough and District,E07000207,Elmbridge,Surrey,Democracy,Voter Turnout at Local Elections,,2024,37.79271898,,Positive
+Borough and District,E07000208,Epsom and Ewell,Surrey,Democracy,Voter Turnout at Local Elections,,2024,33.75982011,,Positive
+Borough and District,E07000209,Guildford,Surrey,Democracy,Voter Turnout at Local Elections,,2024,38.46371197,,Positive
+Borough and District,E07000210,Mole Valley,Surrey,Democracy,Voter Turnout at Local Elections,,2024,39.51950348,,Positive
+Borough and District,E07000211,Reigate and Banstead,Surrey,Democracy,Voter Turnout at Local Elections,,2024,36.56770278,,Positive
+Borough and District,E07000212,Runnymede,Surrey,Democracy,Voter Turnout at Local Elections,,2024,31.89284419,,Positive
+Borough and District,E07000213,Spelthorne,Surrey,Democracy,Voter Turnout at Local Elections,,2024,31.25827551,,Positive
+Borough and District,E07000214,Surrey Heath LA,Surrey,Democracy,Voter Turnout at Local Elections,,2024,34.719448,,Positive
+Borough and District,E07000215,Tandridge,Surrey,Democracy,Voter Turnout at Local Elections,,2024,35.30204743,,Positive
+Borough and District,E07000216,Waverley,Surrey,Democracy,Voter Turnout at Local Elections,,2024,39.06530112,,Positive
+Borough and District,E07000217,Woking,Surrey,Democracy,Voter Turnout at Local Elections,,2024,36.73886756,,Positive
