@@ -126,7 +126,7 @@ def format_ind(ind_name):
 st.sidebar.title("Navigation")
 app_mode = st.sidebar.radio("What do you want to do?", [
     "1. Explore A Single Indicator", 
-    "2. View An Existing Index", 
+    "2. View An Existing Priority Area", 
     "3. Build A Bespoke Index", 
     "4. Compare Side-by-Side",
     "5. Spatial Correlation (Bivariate Map)",
@@ -201,7 +201,7 @@ with tab_dashboard:
     # ==========================================
     elif app_mode == "2. View An Existing Index":
         st.subheader("Existing Strategic Indices")
-        existing_index = st.selectbox("Select Existing Index", ["Surrey Index (Mock)", "Health and Wellbeing Strategy Index (Mock)", "Community Harm Index (Mock)"])
+        existing_index = st.selectbox("Select Existing Index", ["Surrey Index (Mock)", "Health and Wellbeing Strategy Index (Mock)", "Community Harm (Mock)", "Domestic Abuse (Mock)"])
         st.write(f"Currently viewing the architecture for the **{existing_index}**.")
 
     # ==========================================
