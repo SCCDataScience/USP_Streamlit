@@ -78,6 +78,8 @@ def load_hwb_index():
     try:
         return pd.read_excel('Surrey_Health_Wellbeing_Index_Borough_2026_v4.xlsx', sheet_name='Sheet1')
     except Exception as e:
+        # This will print the actual technical error to the screen if it fails again
+        st.error(f"Excel Load Error: {e}") 
         return None
 
 df_hwb = load_hwb_index()
