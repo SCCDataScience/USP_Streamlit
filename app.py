@@ -74,6 +74,15 @@ def load_raw_data(file_path):
     return df
 
 @st.cache_data
+def load_hwb_index():
+    try:
+        return pd.read_excel('Surrey_Health_Wellbeing_Index_Borough_2026_v4.xlsx', sheet_name='Sheet1')
+    except Exception as e:
+        return None
+
+df_hwb = load_hwb_index()
+
+@st.cache_data
 def load_mock_services():
     return pd.DataFrame({
         "Service_Name": ["Ashford Hospital", "Royal Surrey", "Woking High", "Guildford Library", "Elmbridge Leisure", "Epsom General"],
@@ -199,11 +208,106 @@ with tab_dashboard:
     # ==========================================
     # MODE 2: EXISTING INDEX
     # ==========================================
-    elif app_mode == "2. View An Existing Index":
-        st.subheader("Existing Strategic Indices")
-        existing_index = st.selectbox("Select Existing Index", ["Surrey Index (Mock)", "Health and Wellbeing Strategy Index (Mock)", "Community Harm (Mock)", "Domestic Abuse (Mock)"])
+    elif app_mode == "2. View An Existing Priority Area":
+        st.subheader("Strategic Indices & Priority Areas")
+        
+        # Hardcoded for the prototype, scalable later
+        existing_index = st.sidebar.selectbox("Select Index", ["Health and Wellbeing Strategy Index (2026)", "Surrey Index (Mock)", "Community Harm (Mock)", "Domestic Abuse (Mock)"])
         st.write(f"Currently viewing the architecture for the **{existing_index}**.")
+        
+        if existing_index == "Health and Wellbeing Strategy Index (2026)" and df_hwb is not None:
+            # Create two sub-tabs for navigation within Mode 2
+            tab_overview, tab_local = st.tabs(["🌍 County Overview", "🎯 Local Area Deep-Dive"])
+            
+            # --- TAB 1: COUNTY OVERVIEW ---
+            with tab_overview:
+                # Filter for the Overall Index Score
+                df_overall = df_hwb[df_hwb['Index Level'] == 'Overall']
+                
+                col1, col2 = st.columns([2, 1])
+                with col1:
+                    st.markdown("**Overall Health & Wellbeing Score**")
+                    if geo:
+                        fig_map = px.choropleth_map(
+                            df_overall, geojson=geo, locations="Area Name", featureidkey="properties.LAD23NM",
+                            color="Score", color_continuous_scale="Viridis", map_style="open-street-map",
+                            zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6,
+                            hover_data={"Rank": True}
+                        )
+                        fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                        st.plotly_chart(fig_map, use_container_width=True)
+                with col2:
+                    st.markdown("**Borough Rankings**")
+                    st.dataframe(
+                        df_overall[['Rank', 'Area Name', 'Score']].sort_values('Rank').set_index('Rank'),
+                        use_container_width=True
+                    )
+            
+            # --- TAB 2: LOCAL AREA DEEP-DIVE ---
+            with tab_local:
+                selected_area = st.selectbox("Select a Borough/District to Diagnose:", sorted(df_hwb['Area Name'].dropna().unique()))
+                
+                # Get the area's overall score and rank
+                area_overall = df_overall[df_overall['Area Name'] == selected_area].iloc[0]
+                
+                col1, col2, col3 = st.columns(3)
+                col1.metric("Overall Score", f"{area_overall['Score']:.1f}")
+                col2.metric("County Rank", f"{area_overall['Rank']} of 11")
+                col3.metric("Unitary Group", area_overall['Unitary Group'])
+                
+                st.divider()
+                
+                # Radar Chart (Spider Plot) for Dimensions
+                st.markdown(f"**Performance Across Strategic Priorities: {selected_area}**")
+                
+                # Get dimension scores for the selected area and the county average
+                df_dims = df_hwb[df_hwb['Index Level'] == 'Dimension']
+                area_dims = df_dims[df_dims['Area Name'] == selected_area]
+                county_avg_dims = df_dims.groupby('Dimension Name')['Score'].mean().reset_index()
+                
+                if not area_dims.empty:
+                    fig_radar = go.Figure()
+                    
+                    # Area's performance polygon
+                    fig_radar.add_trace(go.Scatterpolar(
+                        r=area_dims['Score'],
+                        theta=area_dims['Dimension Name'],
+                        fill='toself',
+                        name=selected_area,
+                        line_color='#1A5632' # Dark Green
+                    ))
+                    
+                    # Surrey average polygon
+                    fig_radar.add_trace(go.Scatterpolar(
+                        r=county_avg_dims['Score'],
+                        theta=county_avg_dims['Dimension Name'],
+                        fill='none',
+                        name='Surrey Average',
+                        line_color='gray',
+                        line_dash='dash'
+                    ))
+                    
+                    fig_radar.update_layout(
+                        polar=dict(radialaxis=dict(visible=True, range=[0, 100])),
+                        showlegend=True,
+                        height=400,
+                        margin={"r":40,"t":20,"l":40,"b":20}
+                    )
+                    st.plotly_chart(fig_radar, use_container_width=True)
+                
+                # Drill down into underlying components/indicators
+                with st.expander(f"Explore Underlying Indicators for {selected_area}", expanded=True):
+                    df_inds = df_hwb[(df_hwb['Area Name'] == selected_area) & (df_hwb['Index Level'].isin(['Component', 'Indicator']))]
+                    
+                    # Sort for display
+                    display_df = df_inds[['Index Level', 'Dimension Name', 'Component Name', 'Metric Name Combined', 'Score', 'Rank', 'Actual Value']]
+                    st.dataframe(display_df, hide_index=True, use_container_width=True)
 
+        elif existing_index != "Health and Wellbeing Strategy Index (2026)":
+            st.info(f"The {existing_index} is currently under development.")
+        else:
+            st.error("⚠️ 'Surrey_Health_Wellbeing_Index_Borough_2026_v4.xlsx' not found. Please upload to your GitHub repo.")
+    
     # ==========================================
     # MODE 3: BESPOKE INDEX
     # ==========================================
