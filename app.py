@@ -213,8 +213,7 @@ with tab_dashboard:
         
         # Hardcoded for the prototype, scalable later
         existing_index = st.sidebar.selectbox("Select Index", ["Health and Wellbeing Strategy Index (2026)", "Surrey Index (Mock)", "Community Harm (Mock)", "Domestic Abuse (Mock)"])
-        st.write(f"Currently viewing the architecture for the **{existing_index}**.")
-        
+                
         if existing_index == "Health and Wellbeing Strategy Index (2026)" and df_hwb is not None:
             # Create two sub-tabs for navigation within Mode 2
             tab_overview, tab_local = st.tabs(["🌍 County Overview", "🎯 Local Area Deep-Dive"])
