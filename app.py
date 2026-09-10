@@ -209,7 +209,7 @@ with tab_dashboard:
     # MODE 2: EXISTING INDEX
     # ==========================================
     elif app_mode == "2. View An Existing Priority Area":
-        st.subheader("Strategic Indices & Priority Areas")
+        st.subheader("Strategic Indices and Priority Areas")
         
         # Hardcoded for the prototype, scalable later
         existing_index = st.sidebar.selectbox("Select Index", ["Health and Wellbeing Strategy Index (2026)", "Surrey Index (Mock)", "Community Harm (Mock)", "Domestic Abuse (Mock)"])
@@ -357,7 +357,7 @@ with tab_dashboard:
     # MODE 4: SIDE-BY-SIDE
     # ==========================================
     elif app_mode == "4. Compare Side-by-Side":
-        st.subheader("Indicator Correlation & Spatial Comparison")
+        st.subheader("Indicator Correlation and Spatial Comparison")
         
         ind_a = st.sidebar.selectbox(
             "Indicator A (Left Map)", 
@@ -450,7 +450,7 @@ with tab_dashboard:
     # MODE 6: LOCAL SERVICES MAPPER (PINS)
     # ==========================================
     elif app_mode == "6. Local Services Mapper (Pins)":
-        st.subheader("Asset & Services Mapper")
+        st.subheader("Asset and Services Mapper")
         st.write("Overlay local infrastructure (Schools, GP Surgeries, Libraries) on top of deprivation or economic data.")
         
         base_ind = st.selectbox("Select Background Heatmap Layer", 
