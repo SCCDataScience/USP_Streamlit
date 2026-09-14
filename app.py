@@ -225,14 +225,14 @@ with tab_dashboard:
                 # Filter for the Overall Index Score
                 df_overall = df_hwb[df_hwb['Index Level'] == 'Overall']
                 
-                col1, col2 = st.columns([2, 1])
+                col1, col2 = st.columns([3, 1])
                 with col1:
                     st.markdown("**Overall Health & Wellbeing Score**")
                     if geo:
                         fig_map = px.choropleth_map(
                             df_overall, geojson=geo, locations="Area Name", featureidkey="properties.LAD23NM",
                             color="Score", color_continuous_scale="Viridis", map_style="open-street-map",
-                            zoom=8.7, center={"lat": 51.26, "lon": -0.4}, opacity=0.6,
+                            zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.6,
                             hover_data={"Rank": True}
                         )
                         fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
@@ -338,7 +338,7 @@ with tab_dashboard:
             latest_year = display_data['Year'].max()
             map_df = display_data[display_data['Year'] == latest_year]
 
-            col1, col2 = st.columns([2, 1])
+            col1, col2 = st.columns([3, 1])
             with col1:
                 if geo:
                     fig_map = px.choropleth_map(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
