@@ -200,9 +200,8 @@ with tab_dashboard:
         with col1:
             if geo:
                 fig_map = px.choropleth_map(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="viridis", map_style="open-street-map",
-                    zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.6)
-                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                    color="Value", color_continuous_scale="viridis", map_style="open-street-map", opacity=0.6)
+                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50})
                 st.plotly_chart(fig_map, use_container_width=True)
         with col2:
             st.dataframe(map_df_active[['Area_Name', 'Value']].sort_values('Value', ascending=False), hide_index=True)
@@ -231,11 +230,10 @@ with tab_dashboard:
                     if geo:
                         fig_map = px.choropleth_map(
                             df_overall, geojson=geo, locations="Area Name", featureidkey="properties.LAD23NM",
-                            color="Score", color_continuous_scale="Viridis", map_style="open-street-map",
-                            zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.6,
+                            color="Score", color_continuous_scale="Viridis", map_style="open-street-map", opacity=0.6,
                             hover_data={"Rank": True}
                         )
-                        fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                        fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50})
                         st.plotly_chart(fig_map, use_container_width=True)
                 with col2:
                     st.markdown("**Borough Rankings**")
@@ -342,9 +340,8 @@ with tab_dashboard:
             with col1:
                 if geo:
                     fig_map = px.choropleth_map(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                        color="Final_Value", color_continuous_scale="viridis", map_style="open-street-map",
-                        zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.6)
-                    fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                        color="Final_Value", color_continuous_scale="viridis", map_style="open-street-map", opacity=0.6)
+                    fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50})
                     st.plotly_chart(fig_map, use_container_width=True)
             with col2:
                 st.dataframe(map_df[['Area_Name', 'Final_Value']].sort_values('Final_Value', ascending=False), hide_index=True)
@@ -385,18 +382,16 @@ with tab_dashboard:
             st.markdown(f"**{ind_a}** ({latest_year_a})")
             if geo:
                 fig_a = px.choropleth_map(df_a[df_a['Year'] == latest_year_a], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="Blues", map_style="open-street-map",
-                    zoom=8.5, center={"lat": 51.3, "lon": -0.4}, opacity=0.7)
-                fig_a.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                    color="Value", color_continuous_scale="Blues", map_style="open-street-map", opacity=0.7)
+                fig_a.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50})
                 st.plotly_chart(fig_a, use_container_width=True)
 
         with col2:
             st.markdown(f"**{ind_b}** ({latest_year_b})")
             if geo:
                 fig_b = px.choropleth_map(df_b[df_b['Year'] == latest_year_b], geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Value", color_continuous_scale="Reds", map_style="open-street-map",
-                    zoom=8.5, center={"lat": 51.3, "lon": -0.4}, opacity=0.7)
-                fig_b.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                    color="Value", color_continuous_scale="Reds", map_style="open-street-map", opacity=0.7)
+                fig_b.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50})
                 st.plotly_chart(fig_b, use_container_width=True)
 
     # ==========================================
@@ -439,9 +434,8 @@ with tab_dashboard:
             
             if geo:
                 fig_biv = px.choropleth_map(biv_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
-                    color="Biv_Class", color_discrete_map=biv_colors, map_style="open-street-map",
-                    zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
-                fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
+                    color="Biv_Class", color_discrete_map=biv_colors, map_style="open-street-map", opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
+                fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600, map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50}, showlegend=False)
                 st.plotly_chart(fig_biv, use_container_width=True)
                 
             st.info("**How to read this map:** Dark Purple (`3-3`) = High in both. Light Grey (`1-1`) = Low in both. Bright Red (`3-1`) = High Indicator 1, Low Indicator 2. Bright Blue (`1-3`) = Low Indicator 1, High Indicator 2.")
