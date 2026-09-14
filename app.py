@@ -343,7 +343,7 @@ with tab_dashboard:
                 if geo:
                     fig_map = px.choropleth_map(map_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
                         color="Final_Value", color_continuous_scale="viridis", map_style="open-street-map",
-                        zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
+                        zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.6)
                     fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                     st.plotly_chart(fig_map, use_container_width=True)
             with col2:
