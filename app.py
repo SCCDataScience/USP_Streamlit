@@ -486,7 +486,24 @@ with tab_dashboard:
                     text=type_data['Service_Name'], hoverinfo='text', name=s_type
                 ))
 
-            fig.update_layout(map_style="open-street-map", map_zoom=8.6, map_center={"lat": 51.27, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
+            fig.update_layout(
+                map_style="open-street-map", 
+                # Replaced zoom and center with bounds
+                map_bounds={"west": -0.88, "east": 0.08, "south": 51.00, "north": 51.50}, 
+                margin={"r":0,"t":0,"l":0,"b":0},
+                height=600,
+                # Move the pins legend to the top-left corner
+                legend=dict(
+                    yanchor="top",
+                    y=0.98,
+                    xanchor="left",
+                    x=0.02,
+                    bgcolor="rgba(255, 255, 255, 0.8)", # Semi-transparent white
+                    bordercolor="gray",
+                    borderwidth=1,
+                    title_text="Local Services"
+                )
+            )
             st.plotly_chart(fig, use_container_width=True)
 
     # ==========================================
