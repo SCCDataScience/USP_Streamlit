@@ -201,8 +201,8 @@ with tab_dashboard:
             if geo:
                 fig_map = px.choropleth_map(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
                     color="Value", color_continuous_scale="viridis", map_style="open-street-map",
-                    zoom=8.7, center={"lat": 51.26, "lon": -0.4}, opacity=0.6)
-                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600)
+                    zoom=8.5, center={"lat": 51.26, "lon": -0.4}, opacity=0.6)
+                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
                 st.plotly_chart(fig_map, use_container_width=True)
         with col2:
             st.dataframe(map_df_active[['Area_Name', 'Value']].sort_values('Value', ascending=False), hide_index=True)
