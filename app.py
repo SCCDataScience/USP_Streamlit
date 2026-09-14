@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from datetime import datetime
 
 # 1. Page Configuration
-#st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
+st.set_page_config(page_title="Understanding Surrey's Places", layout="wide")
 
 # --- CUSTOM HEADER BANNER ---
 st.markdown("""
