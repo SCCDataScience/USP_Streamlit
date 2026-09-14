@@ -196,13 +196,13 @@ with tab_dashboard:
         fig_line.update_layout(xaxis_type='category')
         st.plotly_chart(fig_line, use_container_width=True)
         
-        col1, col2 = st.columns([2, 1])
+        col1, col2 = st.columns([3, 1])
         with col1:
             if geo:
                 fig_map = px.choropleth_map(map_df_active, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
                     color="Value", color_continuous_scale="viridis", map_style="open-street-map",
-                    zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6)
-                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+                    zoom=8.7, center={"lat": 51.26, "lon": -0.4}, opacity=0.6)
+                fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, height=600)
                 st.plotly_chart(fig_map, use_container_width=True)
         with col2:
             st.dataframe(map_df_active[['Area_Name', 'Value']].sort_values('Value', ascending=False), hide_index=True)
