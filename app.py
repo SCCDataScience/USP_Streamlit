@@ -232,7 +232,7 @@ with tab_dashboard:
                         fig_map = px.choropleth_map(
                             df_overall, geojson=geo, locations="Area Name", featureidkey="properties.LAD23NM",
                             color="Score", color_continuous_scale="Viridis", map_style="open-street-map",
-                            zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.6,
+                            zoom=8.7, center={"lat": 51.26, "lon": -0.4}, opacity=0.6,
                             hover_data={"Rank": True}
                         )
                         fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
