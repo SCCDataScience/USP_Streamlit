@@ -440,7 +440,7 @@ with tab_dashboard:
             if geo:
                 fig_biv = px.choropleth_map(biv_df, geojson=geo, locations="Area_Name", featureidkey="properties.LAD23NM",
                     color="Biv_Class", color_discrete_map=biv_colors, map_style="open-street-map",
-                    zoom=9, center={"lat": 51.3, "lon": -0.4}, opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
+                    zoom=8.6, center={"lat": 51.27, "lon": -0.4}, opacity=0.8, hover_data={"Biv_Class": False, "Area_Name": True, "Value_X": True, "Value_Y": True})
                 fig_biv.update_layout(margin={"r":0,"t":0,"l":0,"b":0}, showlegend=False)
                 st.plotly_chart(fig_biv, use_container_width=True)
                 
@@ -486,7 +486,7 @@ with tab_dashboard:
                     text=type_data['Service_Name'], hoverinfo='text', name=s_type
                 ))
 
-            fig.update_layout(map_style="open-street-map", map_zoom=9, map_center={"lat": 51.3, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
+            fig.update_layout(map_style="open-street-map", map_zoom=8.6, map_center={"lat": 51.27, "lon": -0.4}, margin={"r":0,"t":0,"l":0,"b":0})
             st.plotly_chart(fig, use_container_width=True)
 
     # ==========================================
